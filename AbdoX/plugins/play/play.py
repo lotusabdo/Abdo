@@ -708,15 +708,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from AlinaXIQ import Carbon, YouTube, app
-from AlinaXIQ.core.call import Alina
-from AlinaXIQ.misc import db
-from AlinaXIQ.utils.database import add_active_video_chat, is_active_chat
-from AlinaXIQ.utils.exceptions import AssistantErr
-from AlinaXIQ.utils.inline import aq_markup, queuemarkup, close_markup, stream_markup, stream_markup2, panel_markup_4
-from AlinaXIQ.utils.pastebin import AlinaBin
-from AlinaXIQ.utils.stream.queue import put_queue, put_queue_index
-from AlinaXIQ.utils.thumbnails import get_thumb
+from AbdoX import Carbon, YouTube, app
+from AbdoX.core.call import Alina
+from AbdoX.misc import db
+from AbdoX.utils.database import add_active_video_chat, is_active_chat
+from AbdoX.utils.exceptions import AssistantErr
+from AbdoX.utils.inline import aq_markup, queuemarkup, close_markup, stream_markup, stream_markup2, panel_markup_4
+from AbdoX.utils.pastebin import AlinaBin
+from AbdoX.utils.stream.queue import put_queue, put_queue_index
+from AbdoX.utils.thumbnails import get_thumb
 
 
 async def stream(
