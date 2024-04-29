@@ -1,12 +1,12 @@
 {
-    "name": "ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ",
+    "name": "𝐀 𝐁 𝐃 𝐎♥", 
     "description": "- لـ تشغيـل الاغانـي والفيديـو وتشغيل المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
-    "logo": "https://telegra.ph/file/f45ae7ab072972904a0eb.jpg",
+    "logo": "https://telegra.ph/file/ef04197f79ba301c285be.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Zelzal",
+    "Alina",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -14,12 +14,12 @@
     "env": {
          "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "17154185",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "7d24797dd1d72adbe8ee2596be2904d0",
         "required": true
           }, 
       "BOT_TOKEN": {
@@ -39,12 +39,12 @@
       },
       "HEROKU_API_KEY": {
         "description": "⦗ https://dashboard.heroku.com/account ⦘ ادخـل كود ايبـي كـي",
-        "value": "",
+        "value": "b9154848-55a3-4afe-9db3-1ae48ecec914",
         "required": false
       },
           "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "",
+        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority",
         "required": true 
      },      
       "HEROKU_APP_NAME": {
@@ -54,7 +54,7 @@
       },
       "LOGGER_ID": {
         "description": "ايـدي قروب السـجل",
-        "value": "-100",
+        "value": "",
         "required": true
       }
     },
