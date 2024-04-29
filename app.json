@@ -64,8 +64,7 @@
         },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority", 
-      }
+        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority",
     },
     "buildpacks": [
           {
