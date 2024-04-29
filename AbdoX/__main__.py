@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AbdoX import LOGGER, app, userbot
-from AbdoX.core.call import Zelzaly
+from AbdoX.core.call import Alina
 from AbdoX.misc import sudo
 from AbdoX.plugins import ALL_MODULES
 from AbdoX.utils.database import get_banned_users, get_gbanned
@@ -38,9 +38,9 @@ async def init():
         importlib.import_module("AbdoX.plugins" + all_module)
     LOGGER("ميــوزك بودا").info("تم تحميل الاضافات ...✓")
     await userbot.start()
-    await Zelzaly.start()
+    await Alina.start()
     try:
-        await Zelzaly.stream_call("https://telegra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Alina.stream_call("https://telegra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("ميــوزك بودا").info(
             "خطأ .. قم بفتح المكالمة في مجموعة السجل الخاصه بك\n\nجارِ ايقاف بوت الميوزك . . ."
@@ -48,7 +48,7 @@ async def init():
         exit()
     except:
         pass
-    await Zelzaly.decorators()
+    await Alina.decorators()
     LOGGER("ميــوزك بودا").info("TmLotus")
     await idle()
     await app.stop()

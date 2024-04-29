@@ -1,4 +1,4 @@
-from AbdoX.core.bot import Zelzaly
+from AbdoX.core.bot import Alina
 from AbdoX.core.dir import dirr
 from AbdoX.core.git import git
 from AbdoX.core.userbot import Userbot
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Zelzaly()
+app = Alina()
 userbot = Userbot()
 
 
