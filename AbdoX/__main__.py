@@ -50,7 +50,7 @@ async def init():
         pass
     await Alina.decorators()
     LOGGER("AbdoX").info(
-        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗠𝗥 𝗗𝗔𝗫𝗫☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
+        "╔═════ஜ۩۞۩ஜ════╗\n  تم تنصيب بوتك علي سورس بودا ميوزك\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
