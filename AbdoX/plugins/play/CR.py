@@ -81,7 +81,7 @@ async def yas(client, message):
 @app.on_message(command ["المالك", "مالك"]
         and Compulsory_subscription(message)
         and check_group(chat_id)
-    ):
+    )
         allAdminsss = bot.get_chat_administrators(chat_id)
         Admins = [Admin.user for Admin in allAdminsss if Admin.status == "creator"]
         for user in Admins:
