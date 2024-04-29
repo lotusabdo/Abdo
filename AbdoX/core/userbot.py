@@ -51,9 +51,9 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("IQSUPP")
+                await self.one.join_chat("CVCVCVUI")
               
-                await self.one.join_chat("MGIMT")
+                await self.one.join_chat("l2_2Y")
             except:
                 pass
             assistants.append(1)
@@ -74,9 +74,9 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("IQSUPP")
+                await self.two.join_chat("CVCVCVUI")
                 
-                await self.two.join_chat("MGIMT")
+                await self.two.join_chat("l2_2Y")
             except:
                 pass
             assistants.append(2)
@@ -96,9 +96,9 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("IQSUPP")
+                await self.three.join_chat("TmLotus")
                 
-                await self.three.join_chat("MGIMT")
+                await self.three.join_chat("l2_2Y")
             except:
                 pass
             assistants.append(3)
@@ -118,9 +118,9 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("XV7AMO")
+                await self.four.join_chat("CVCVCVUI")
                 
-                await self.four.join_chat("MGIMT")
+                await self.four.join_chat("l2_2Y")
             except:
                 pass
             assistants.append(4)
@@ -140,9 +140,9 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("XV7AMO")
+                await self.five.join_chat("CVCVCVUI")
                 
-                await self.five.join_chat("MGIMT")
+                await self.five.join_chat("l2_2Y")
             except:
                 pass
             assistants.append(5)
