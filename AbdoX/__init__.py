@@ -1,8 +1,8 @@
-from AlinaXIQ.core.bot import Alina
-from AlinaXIQ.core.dir import dirr
-from AlinaXIQ.core.git import git
-from AlinaXIQ.core.userbot import Userbot
-from AlinaXIQ.misc import dbb, heroku
+from AbdoX.core.bot import Alina
+from AbdoX.core.dir import dirr
+from AbdoX.core.git import git
+from AbdoX.core.userbot import Userbot
+from AbdoX.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
