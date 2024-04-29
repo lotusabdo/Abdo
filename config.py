@@ -20,7 +20,7 @@ BOT_USERNAME = getenv("BOT_USERNAME" , None)
 BOT_NAME = getenv("BOT_NAME" , None)
 #get Your Assistant User name
 ASSUSERNAME = getenv("ASSUSERNAME" , None)
-EVALOP = list(map(int, getenv("EVALOP", "6456857472 1291327027 ").split()))
+EVALOP = list(map(int, getenv("EVALOP", "6456857472 ").split()))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
@@ -35,7 +35,7 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "99999
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 833360381))
+OWNER_ID = int(getenv("OWNER_ID", 6456857472))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -45,9 +45,9 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/lotusabdo/d3keoeke.git",
+    "https://github.com/lotusabdo/Abdo3.git",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
@@ -95,10 +95,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/774380facd73524f27d26.jpg"
+    "START_IMG_URL", "https://graph.org/file/5eb96c4141db368f17b84.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/88fb55599836ef5662a98.jpg"
+    "PING_IMG_URL", "https://graph.org/file/5eb96c4141db368f17b84.jpg"
 )
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/88fb55599836ef5662a98.jpg"
 STATS_IMG_URL = "https://te.legra.ph/file/88fb55599836ef5662a98.jpg"
