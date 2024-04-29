@@ -1,0 +1,88 @@
+{
+    "name": "𝐁 𝐎 𝐃 𝐀 ♥",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/88fb55599836ef5662a98.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "iq",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "17154185",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "7d24797dd1d72adbe8ee2596be2904d0",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "6399913438:AAGOUWLrzcbNSznyhm2Rj8Z0_ShZ2sFLQSA",
+        "required": true
+      },
+      "BOT_NAME": {
+        "description": "A Bot's name from your bot",
+        "value": "مــيوزك أوههــم › 🫧",
+        "required": true
+      },
+      "ASSUSERNAME": {
+        "description": "A Bot's ass from your assistant account",
+        "value": "مســاعٍدِ أوُهم › 🫧",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "A Bot's ass from your assistant account",
+        "value": "jvhgvbbot",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session from @STRINGSEASO_NBOT on Telegram.",
+        "value": "BAEFwIkAmTjP8ih0OlPvnl6vVZJd8x0R_Ug1cPvupcEfNZD48gkW193BZB_h0DFHKwxd8R5Tiq5DUt5VIuCqmNC4uL9h8-hU-qvdnAMYtnB-2_JDQ5gK46aUC_MhuzkBCJzPHBdGezTS1fMGrUUfXldVC9WCbBW-x4_ceRtlhPbTb7is3sMEd4RGTBkTgtOU0Cff9kdif-99yDmHfJYUlTjwQnSC1SbMsjSOC_38ehi0eE-kV-noY67EZzZxbznohaqpw8PV04LfKFILFA8bHrouxgrNDSIZtq43wQ3k4YyvP4eoWQ0PkU8b8-iC_dSqws2-6Ugm8D5bzUHBMEdy1yT8oKlQcgAAAAGhYQlGAA",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "b9154848-55a3-4afe-9db3-1ae48ecec914",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "-1002038806549",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
