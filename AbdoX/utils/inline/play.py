@@ -2,9 +2,9 @@ import math
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
-from AbdoX .utils.formatters import time_to_seconds
+from AlinaXIQ.utils.formatters import time_to_seconds
 
-from AbdoX  import app
+from AlinaXIQ import app
 
 def track_markup(_, user_id, channel, fplay):
     buttons = [
@@ -23,7 +23,7 @@ def track_markup(_, user_id, channel, fplay):
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                url=f"https://t.me/AD3_M",
             ),
         ],
         [
@@ -130,7 +130,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                url=f"https://t.me/AD3_M",
             ),
         ],
         [
@@ -153,7 +153,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                url=f"https://t.me/AD3_M",
             ),
         ],
         [
@@ -214,7 +214,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                url=f"https://t.me/AD3_M",
             ),
         ],
         [
