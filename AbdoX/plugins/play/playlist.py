@@ -102,7 +102,7 @@ async def delete_playlist(chat_id: int, name: str) -> bool:
 ADDPLAYLIST_COMMAND = ("addplaylist")
 
 
-@app.on_message(filters.command(["playlist","وضع شغل"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
+@app.on_message(filters.command(["playlist","قايمة التشغيل"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
 @language
 async def check_playlist(client, message: Message, _):
     user_id = message.from_user.id
