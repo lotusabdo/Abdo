@@ -45,8 +45,8 @@ async def kill():
 
 async def play(i):
   assistant = await group_assistant(Alina,i)
-  file_path = "AbdoX/assets/azan.m4a"
-  stream = AlinaPiped(file_path, Alina_parameters=HighQualityAlina())
+  file_path = "AlinaXIQ/assets/azan.m4a"
+  stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
   try:
       await assistant.join_group_call(
            i,
