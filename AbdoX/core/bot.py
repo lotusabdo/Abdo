@@ -6,7 +6,7 @@ import config
 from ..logging import LOGGER
 
 
-class Zelzaly(Client):
+class Alina(Client):
     def __init__(self):
         LOGGER("ميــوزك بودا").info(f"جارِ بدء تشغيل البوت . . .")
         super().__init__(
