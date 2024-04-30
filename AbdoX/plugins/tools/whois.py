@@ -21,7 +21,7 @@ def ReplyCheck(message: Message):
 
 infotext = (
     "[{full_name}](tg://user?id={user_id})\n\n"
-    "** •𝐔𝐒𝐄𝐑 **: `{user_id}`\n\n"
+    "** •𝐈𝐃 **: `{user_id}`\n\n"
     "** •𝐍𝐄𝐌 **: `{first_name}`\n\n"
     "** •𝐔𝐒𝐄𝐑 **: `@{username}`\n\n"
     "** •𝐎𝐍𝐋𝐈𝐍𝐄 **: `{last_online}`"
