@@ -11,5 +11,3 @@ async def rotba(_: Client, message: Message):
     if member.status == ChatMemberStatus.MEMBER: return await message.reply("- رتبتك هي العضو.", reply_to_message_id=message.id)
     elif member.status == ChatMemberStatus.ADMINISTRATOR: return await message.reply("- رتبتك هي الادمن.", reply_to_message_id=message.id)
     elif member.status == ChatMemberStatus.OWNER: return await message.reply("- رتبتك هي المالك.", reply_to_message_id=message.id)
-app.send_message(chat_id" • رتبتك هي : مطور السورس")
-  if message.from_user.id == 6456857472:
