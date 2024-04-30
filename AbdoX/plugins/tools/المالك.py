@@ -9,7 +9,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from strings.filters import command
 from AbdoX import (Apple, Resso, Spotify, Telegram, YouTube, app)
 from AbdoX import app
-from AbdoX import gather
 from pyrogram.errors import FloodWait
 
 
