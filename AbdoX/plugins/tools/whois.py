@@ -21,11 +21,10 @@ def ReplyCheck(message: Message):
 
 infotext = (
     "[{full_name}](tg://user?id={user_id})\n\n"
-    "** ➻ معرف المستخدم**: `{user_id}`\n\n"
-    "** ➻ الاسم الاول**: `{first_name}`\n\n"
-    "** ➻ الاسم الثاني**: `{last_name}`\n/n"
-    "** ➻ يوزؤ**: `@{username}`\n\n"
-    "** ➻ النشاط**: `{last_online}`"
+    "** •𝐔𝐒𝐄𝐑 **: `{user_id}`\n\n"
+    "** •𝐍𝐄𝐌 **: `{first_name}`\n\n"
+    "** •𝐔𝐒𝐄𝐑 **: `@{username}`\n\n"
+    "** •𝐎𝐍𝐋𝐈𝐍𝐄 **: `{last_online}`"
 )
 
 
