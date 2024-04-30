@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AbdoX import Apple, Resso, Spotify, Telegram, YouTube, app
-from AbdoX.core.call import Zelzaly
+from AbdoX.core.call import Alina
 from AbdoX.utils import seconds_to_min, time_to_seconds
 from AbdoX.utils.channelplay import get_channeplayCB
 from AbdoX.utils.decorators.language import languageCB
