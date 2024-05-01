@@ -100,12 +100,12 @@ async def nummmm(client: app, message):
 async def stop(client, message):
   chek = await client.get_chat_member(message.chat.id, message.from_user.id)
   if not chek.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
-    await message.reply("♪ عذرا عزيزي هذا الامر للادمن الجروب فقط  💎 .")
+    await message.reply(" عذرا عزيزي هذا الامر للادمن الجروب فقط  ")
     return
   if message.chat.id not in array:
-     await message.reply("♪ المنشن متوقف بي الفعل  💎 .")
+     await message.reply(" المنشن متوقف بي الفعل  ")
      return 
   if message.chat.id in array:
     array.remove(message.chat.id)
-    await message.reply("♪ تم ايقاف المنشن عزيزي  💎 .")
+    await message.reply("تم ايقاف المنشن عزيزي  ")
     return
