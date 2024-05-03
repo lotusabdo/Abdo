@@ -1,7 +1,7 @@
 
 from pyrogram import filters, Client
 from pyrogram.enums import ChatMemberStatus
-from AbdoX  import app
+from AbdoX import app
 
 
 @app.on_message(filters.forwarded)
