@@ -43,20 +43,7 @@ REPLY_MESSAGE_BUTTONS = [
 ["حظر عام","المكالمات"],
 ["انمي","متحركه"],
 ["تويت", "صراحه"],
-["❎ ¦ حذف الكيبورد"]], resize_keyboard=True)
-        await message.reply(
-              text=text,
-               reply_markup=kep,quote=True)
 
-@app.on_message(filters.command(["❎ ¦ حذف الكيبورد"], ""))
-async def upbkgt(client: Client, message: Message):
-    await message.reply_text(
-        text="""❎ ¦ تم حذف الكيبورد بنجاح""",
-        reply_markup=ReplyKeyboardRemove()
-    )
-
-
-    
 
 @app.on_message(command("رتبتي") & filters.group )
 def forward(client: Client, message: Message):
