@@ -37,7 +37,7 @@ async def crsourceowner(client: Client, message: Message):
 
 REPLY_MESSAGE = "**مرحبا عزيزي المطور الاساسي**"
 
-REPLY_MESSAGE_BUTTONS = [
+REPLY_MESSAGE_BUTTONS =([
     [" المطور", "مطور السورس"],
 ["السورس","يـوتيوب "],
 ["حظر عام","المكالمات"],
