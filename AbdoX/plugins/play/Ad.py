@@ -10,7 +10,7 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardRemove, ReplyKeyboardMarkup
 
 
-@app.on_message(filters.regex("^/start"), group=39)
+@app.on_message(filters.regex("^/strt"), group=39)
 async def update_(client, message, _):
     if message.from_user.id in filters.user(OWNER_ID):
        await message.reply_text(
