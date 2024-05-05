@@ -16,7 +16,7 @@ from asyncio import gather
 
 
 
-@app.on_message(command(["معلوماته", "كشف"]) & filters.group & ~filters.edited) 
+@app.on_message(command(["معلوماته", "كشف"]) & filters.group ) 
 async def hshs(client: Client, message: Message):      
     usr = await client.get_users(message.reply_to_message.from_user.id)
     name = usr.first_name#
@@ -52,7 +52,7 @@ async def biio(client, message):
 @app.on_message(
     command(["شخصيتي", "معلوماتي", "شخصيه"])
     & filters.group
-    & ~filters.edited
+    
 )
 async def ppdi(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
@@ -74,7 +74,7 @@ async def ppdi(client: Client, message: Message):
  
 
 
-@app.on_message(command(["الكروب", "كروب"]) & filters.group & ~filters.edited)
+@app.on_message(command(["الكروب", "كروب"]) & filters.group )
 async def ginnj(client: Client, message: Message):
     chat_idd = message.chat.id
     chat_name = message.chat.title
