@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from AbdoX  import app
-from AbdoX .core.call import Alina, autoend
-from AbdoX .utils.database import get_client, is_active_chat, is_autoend
+from AbdoX import app
+from AbdoX.core.call import Alina, autoend
+from AbdoX.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from AbdoX .core.userbot import assistants
+            from AbdoX.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -65,7 +65,8 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "» ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʟᴇғᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ʙᴇᴄᴀᴜsᴇ ɴᴏ ᴏɴᴇ ᴡᴀs ʟɪsᴛᴇɴɪɴɢ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+                        "خرج المساعد من المحادثه الصوتيه لعدم وجود شخص في المحادثه🥲🥺",
+
                     )
                 except:
                     continue
