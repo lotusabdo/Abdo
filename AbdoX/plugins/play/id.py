@@ -9,7 +9,6 @@ from pyrogram.types import InlineKeyboardButton
 from AbdoX import app
 from AbdoX.utils.database import is_on_off
 from AbdoX import app
-from config import BANNED_USERS, MUSIC_BOT_NAME
 from AbdoX.misc import SUDOERS
 import re
 import sys
