@@ -6,9 +6,7 @@ from AbdoX import (Apple, Resso , Spotify, Telegram, YouTube, app)
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from AbdoX import app
-from config import BANNED_USERS, MUSIC_BOT_NAME
 from AlexaMusic.misc import SUDOERS
 
 import re
