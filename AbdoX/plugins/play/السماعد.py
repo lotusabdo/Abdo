@@ -7,7 +7,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
 from AbdoX import app
-from AlexaMusic.misc import SUDOERS
+from AbdoX.misc import SUDOERS
 
 import re
 import sys
