@@ -6,7 +6,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from AbdoX import (Apple, Resso, Spotify, Telegram, YouTube, app)
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
-from config import LOG, LOG_GROUP_ID
 from AbdoX import app
 from AbdoX.utils.database import is_on_off
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
