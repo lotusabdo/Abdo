@@ -8,7 +8,6 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 from AbdoX import app
 from AbdoX.utils.database import is_on_off
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from AbdoX import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from AbdoX.misc import SUDOERS
