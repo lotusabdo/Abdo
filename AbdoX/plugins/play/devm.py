@@ -26,24 +26,11 @@ async def zdatsr(client: Client, message: Message):
         caption=f"""<b>⌯ 𝙽𝙰𝙼𝙴 :</b> <a href="https://t.me/{usrnam}">{name}</a>
 
 <b>⌯ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 :</b> @{usrnam}""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "", callback_data="zzzll"),
-                ],[
-                    InlineKeyboardButton(
-                        "", callback_data="zzzch"),
-                    InlineKeyboardButton(
-                        "", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        "", callback_data="zzzdv"),
-                ],[
+        
                     InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
                 ],[
                     InlineKeyboardButton(
-                        "•✯  السورس  ✯•", url="https://t.me/EF_19"),
+                       " 🗃قناة السورس", url="https://t.me/l2_2Y"),
                 ],
             ]
         ),
