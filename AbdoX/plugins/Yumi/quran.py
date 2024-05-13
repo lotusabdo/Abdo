@@ -29,7 +29,7 @@ async def quran(c,msg):
 async def next_quran(c,cq):
     data = (cq.data.strip()).split("-")
     number = int(data[1])
-    quran = json.loads(open("AlinaXIQ/assets/quran.json").read())["s"]
+    quran = json.loads(open("AbdoX/assets/quran.json").read())["s"]
     keyboard = []
     list = []
     if (number*10) == 110:
@@ -93,7 +93,7 @@ async def show_quran(c,cq):
     data = (cq.data.strip()).split("-")
     number = int(data[1])
     i = int(data[2])
-    quran = json.loads(open("AlinaXIQ/assets/quran.json").read())["s"] 
+    quran = json.loads(open("AbdoX/assets/quran.json").read())["s"] 
     name = quran[number]["surah"]
     per_name = quran[number]["sounds"][i]["name"]
     file = requests.get(quran[number]["sounds"][i]["url"]).content
