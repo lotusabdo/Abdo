@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AbdoX  import app
-from AbdoX .core.call import Alina
-from AbdoX .misc import SUDOERS, db
-from AbdoX .utils import AdminRightsCheck
-from AbdoX .utils.database import is_active_chat, is_nonadmin_chat
-from AbdoX .utils.decorators.language import languageCB
-from AbdoX .utils.inline import close_markup, speed_markup
+from AbdoX.core.call import Alina
+from AbdoX.misc import SUDOERS, db
+from AbdoX.utils import AdminRightsCheck
+from AbdoX.utils.database import is_active_chat, is_nonadmin_chat
+from AbdoX.utils.decorators.language import languageCB
+from AbdoX.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
