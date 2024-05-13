@@ -2,15 +2,15 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AbdoX  import app
-from AbdoX .utils import extract_user, int_to_alpha
-from AbdoX .utils.database import (
+from AbdoX.utils import extract_user, int_to_alpha
+from AbdoX.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from AbdoX .utils.decorators import AdminActual, language
-from AbdoX .utils.inline import close_markup
+from AbdoX.utils.decorators import AdminActual, language
+from AbdoX.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
