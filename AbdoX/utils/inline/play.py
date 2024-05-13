@@ -19,11 +19,11 @@ def track_markup(_, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                url=f"https://t.me/EU_TM",
+                callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -125,13 +125,11 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["P_B_1"],
-                url=f"https://t.me/EU_TM",
-            ),
-            InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
-            ),
+                callback_data=f"downloadvideo {videoid}"),
+            InlineKeyboardButton(
+                text=_["P_B_1"],
+                callback_data=f"downloadaudio {videoid}")
         ],
         [
             InlineKeyboardButton(
@@ -149,11 +147,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                url=f"https://t.me/EU_TM",
+                callback_data=f"AlinaPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                callback_data=f"AlinaPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -210,11 +208,11 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                url=f"https://t.me/EU_TM",
+                callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
+                callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
         ],
         [

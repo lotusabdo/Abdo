@@ -77,7 +77,7 @@ def aq_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="قناة السورس 🚦", url="https://t.me/l2_2Y",
+                text="نوێکارییەکانی ئەلینا 🍻", url="https://t.me/MGIMT",
             ),
         ],
     ]
@@ -115,7 +115,7 @@ def queuemarkup(_, vidid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="قناة السورس 🚦", url="https://t.me/l2_2Y",
+                text="نوێکارییەکانی ئەلینا 🍻", url="https://t.me/MGIMT",
                 
             ),
         ],
