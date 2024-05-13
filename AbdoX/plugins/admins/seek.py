@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AbdoX  import YouTube, app
-from AbdoX .core.call import Alina
-from AbdoX .misc import db
-from AbdoX .utils import AdminRightsCheck, seconds_to_min
-from AbdoX .utils.inline import close_markup
+from AbdoX.core.call import Alina
+from AbdoX.misc import db
+from AbdoX.utils import AdminRightsCheck, seconds_to_min
+from AbdoX.utils.inline import close_markup
 from config import BANNED_USERS
 
 
