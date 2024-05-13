@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from AbdoX import app
 from AbdoX.utils.database import get_loop, set_loop
-from AbdoX .utils.decorators import AdminRightsCheck
+from AbdoX.utils.decorators import AdminRightsCheck
 from AbdoX.utils.inline import close_markup
 from config import BANNED_USERS
 
