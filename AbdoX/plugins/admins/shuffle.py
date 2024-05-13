@@ -4,9 +4,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AbdoX  import app
-from AbdoX .misc import db
-from AbdoX .utils.decorators import AdminRightsCheck
-from AbdoX .utils.inline import close_markup
+from AbdoX.misc import db
+from AbdoX.utils.decorators import AdminRightsCheck
+from AbdoX.utils.inline import close_markup
 from config import BANNED_USERS
 
 
