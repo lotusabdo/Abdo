@@ -26,6 +26,7 @@ async def zdatsr(client: Client, message: Message):
         caption=f"""<b>⌯ 𝙽𝙰𝙼𝙴 :</b> <a href="https://t.me/{usrnam}">{name}</a>
 
 <b>⌯ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 :</b> @{usrnam}""",
+                   [
         
                     InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
                 ],[
