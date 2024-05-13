@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 from strings.filters import command
 from AbdoX  import app
-from AbdoX .core.call import Alina
-from AbdoX .utils.database import is_music_playing, music_on
-from AbdoX .utils.decorators import AdminRightsCheck
-from AbdoX .utils.inline import close_markup
+from AbdoX.core.call import Alina
+from AbdoX.utils.database import is_music_playing, music_on
+from AbdoX.utils.decorators import AdminRightsCheck
+from AbdoX.utils.inline import close_markup
 from config import BANNED_USERS
 
 
