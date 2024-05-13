@@ -7,7 +7,7 @@ import requests
 from AbdoX.core.call import Alina
 
 
-@app.on_message(filters.command(["قران","القران الكريم","/quran"],""))
+@app.on_message(filters.command(["القران","/quran"],""))
 async def quran(c,msg):
     quran = json.loads(open("AbdoX/assets/quran.json").read())["s"]
     keyboard = []
@@ -21,7 +21,7 @@ async def quran(c,msg):
         list.append(ikb(name, callback_data = f"play-{i-1}"))
     keyboard.append(list)
     keyboard.append([ikb("• التالي •", callback_data = "next-1")])
-    keyboard.append([ikb("قـنـاه الـسـورس", url=f"https://t.me/YU_CQ")])
+    keyboard.append([ikb("قـنـاه الـسـورس", url=f"https://t.me/")])
     video=f"https://telegra.ph/file/39ee458993b40a8a9a9b9.mp4"
     await msg.reply_video(video=video, caption=f"**◗⋮◖ [⧉• 𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙍𝙊𝙍 - إذاعة القرآن](t.me/YU_CQ)\n⋆┄─┄─┄─┄─┄─┄─┄─┄⋆\n◗⋮◖ اهلا عزيزي {msg.from_user.mention}\n◗⋮◖ لقسم إذاعة القرآن الكريم**", reply_markup = ikm(keyboard))
 
