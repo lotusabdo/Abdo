@@ -28,13 +28,13 @@ async def huhh(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/jx_xll"), 
+                        "«𝐆𝐑𝐎𝐔𝐏» ", url=f"https://t.me/jx_xll"), 
                  InlineKeyboardButton(
-                   " 𝐒𝐎𝐔𝐑𝐂𝐄",       url=f"https://t.me/l2_2Y"), 
+                   " «قـنـاه الـسـورس🚦» ",       url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "𝐀 𝐁 𝐃 𝐎", url=f"https://t.me/EU_TM"), 
+                        "«𝐀 𝐁 𝐃 𝐎» ", url=f"https://t.me/EU_TM"), 
                       
              ],[ 
                   InlineKeyboardButton(
@@ -66,7 +66,7 @@ async def yas(client, message):
     usr = await client.get_chat("EU_TM")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"مــعلومـات مــطور الـسـورس \n\n 𝐃𝐄𝐕 :{name}\n\n 𝐔𝐒𝐄𝐑 :@{usr.username}\n\n 𝐈𝐃 :`{usr.id}`\n\n 𝐁𝐈𝐎 :{usr.bio}\n\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
+    await message.reply_photo(photo,       caption=f"مــعلومـات مــطور الـسـورس \n\n ⌯𝐍𝐚𝐦𝐞 :{name}\n ⌯𝐔𝐬𝐫𝐮𝐞 :@{usr.username}\n ⌯𝐈𝐝 :`{usr.id}`\n ⌯𝐁𝐢𝐨 :{usr.bio}\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
