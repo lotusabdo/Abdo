@@ -12,14 +12,18 @@ def track_markup(_, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
 
         [
             InlineKeyboardButton(
-                text="# بؤدآ بـرٱ صدٱعع ــ ٱلتيلي↺",
+                text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
@@ -64,7 +68,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
 
@@ -103,7 +107,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
 
@@ -121,8 +125,12 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="# بؤدآ بـرٱ صدٱعع ــ ٱلتيلي↺",
+                text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
@@ -140,8 +148,12 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text="# بؤدآ بـرٱ صدٱعع ــ ٱلتيلي↺",
+                text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
@@ -161,7 +173,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
 
                 text=_["S_B_3"],
 
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
 
             ),
 
@@ -169,7 +181,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_3"],
-                callback_data=f"https://t.me/l2_2Y",
+                callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
         ],
         [
@@ -190,15 +202,19 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
 
                 text=_["S_B_3"],
 
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
 
             ),
 
         ],
         [
             InlineKeyboardButton(
-                text="# بؤدآ بـرٱ صدٱعع ــ ٱلتيلي↺",
+                text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
@@ -242,7 +258,7 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
 
@@ -280,7 +296,7 @@ def stream_markup2(_, chat_id):
           [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
           ],
 
@@ -355,7 +371,7 @@ def panel_markup_1(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
@@ -396,7 +412,7 @@ def panel_markup_2(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
@@ -438,7 +454,7 @@ def panel_markup_5(_, videoid, chat_id):
          [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/l2_2Y ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
