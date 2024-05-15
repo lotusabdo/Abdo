@@ -169,7 +169,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_3"],
-                callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
+                callback_data=f"https://t.me/l2_2Y",
             ),
         ],
         [
