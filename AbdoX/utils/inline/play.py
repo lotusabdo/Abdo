@@ -21,10 +21,6 @@ def track_markup(_, user_id, channel, fplay):
                 text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
             ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
-            ),
         ],
         [
             InlineKeyboardButton(text="𝖱𝖾𝗉𝗅𝖺𝗒", callback_data=f"ADMIN Replay|{chat_id}"),
@@ -128,10 +124,6 @@ def stream_markup(_, videoid, chat_id):
                 text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
             ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
-            ),
         ],
         [
             InlineKeyboardButton(
@@ -150,10 +142,6 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
-            ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
@@ -211,10 +199,6 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_1"],
                 url=f"https://t.me/EU_TM",
-            ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                url=f"https://t.me/l2_2Y",
             ),
         ],
         [
