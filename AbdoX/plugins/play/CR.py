@@ -77,4 +77,20 @@ async def yas(client, message):
         ),
     )
 
-
+chat = message.chat.id
+    gti = message.chat.title
+    chatusername = f"@{message.chat.username}"
+    link = await app.export_chat_invite_link(chat)
+    user = await client.get_users(message.from_user.id)
+    user_id = message.from_user.id
+    user_ab = message.from_user.username
+    user_name = message.from_user.first_name
+    buttons = [[InlineKeyboardButton(gti, url=f"{link}")]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    await app.send_message(OWNER_ID, f"<b>⌯ قام {message.from_user.mention}\n</b>"
+                                     f"<b>⌯ بمناداتك عزيزي مطور السورس \n</b>"
+                                     f"<b>⌯ الأيدي {user_id}\n</b>"
+                                     f"<b>⌯ اليوزر @{user_ab}\n</b>"
+                                     f"<b>⌯ ايدي المجموعة {message.chat.id}\n</b>"
+                                     f"<b>⌯ يوزر المجموعه {chatusername}</b>",
+                                     reply_markup=reply_markup)
