@@ -18,48 +18,7 @@ def Who(m, user_id):
 forward = []
 cursing = []
 mute = []
-#####==> By JABWA <==#####
-@app.on_message(filters.command("تف", "") & filters.group & filters.reply)
-def jabwa(c, m):
-  ID_BOT = app.id
-  first_name = m.reply_to_message.from_user.first_name
-  id = m.reply_to_message.from_user.id
-  if id == OWNER_ID:
-    return m.reply("• لا يمكنك التف علي المطور ❤️✌️")
-  if id == ID_BOT:
-    return m.reply("• عاوزني اتف علي نفسي يعبيط 😂")
-  if id == DEVELOPERS:
-    return m.reply("• لا يمكنك التف علي مطورين السورس 🧑‍✈️")
-  Text =f"""
-• تم التف علي هذا الشخص
-
-※ بواسطة {first_name}
-
- اععع اي القرف ده 🤢
-"""
-  JABWA = InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك 🎸", url=f"https://t.me/{app.username}?startgroup=true"),]])
-  m.reply_animation("https://t.me/DEVSOLiVEA/13",caption=Text,reply_markup=JABWA)
-
-@app.on_message(filters.command("تخ", "") & filters.group & filters.reply)
-def jabwa(c, m):
-  ID_BOT = app.id
-  first_name = m.reply_to_message.from_user.first_name
-  id = m.reply_to_message.from_user.id
-  if id == OWNER_ID:
-    return m.reply("• لا يمكنك قتل المطور ❤️✌️")
-  if id == ID_BOT:
-    return m.reply("• عاوزني اقتل نفسي 😂")
-  if id == DEVELOPERS:
-    return m.reply("• لا يمكنك قتل مطورين السورس 🧑‍✈️")
-  Text =f"""
-• تم قتل هذا الشخص
-
-※ بواسطة {first_name}
-
- ان لله وان اليه راجعون ⚰😭
-"""
-  JABWA = InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك 🎸", url=f"https://t.me/{app.username}?startgroup=true"),]])
-  m.reply_animation("https://t.me/DEVSOLiVEA/14",caption=Text,reply_markup=JABWA)
+ 
 
 @app.on_message(filters.command("قفل الدردشه", "") & filters.group)
 def of_chat(c, m):
@@ -85,7 +44,7 @@ def on_chat(c, m):
   m.reply(f"• تم فتح الدردشه\n• بواسطة : {mention}",quote=True)
   return
 
-@app.on_message(filters.command("قفل السب بالكتم", "") & filters.group)
+@app.on_message(filters.command("قفل السب ", "") & filters.group)
 def of_cursing(c, m):
   idchat = m.chat.id
   name = m.from_user.mention
@@ -97,7 +56,7 @@ def of_cursing(c, m):
   m.reply(f"• تم قفل السب بالكتم\n• بواسطة : {name}",quote=True)
   return
 
-@app.on_message(filters.command("فتح السب بالكتم", "") & filters.group)
+@app.on_message(filters.command("فتح السب ", "") & filters.group)
 def on_cursing(c, m):
   idchat = m.chat.id
   name = m.from_user.mention
@@ -109,7 +68,7 @@ def on_cursing(c, m):
   m.reply(f"• تم فتح السب بالكتم\n• بواسطة : {name}",quote=True)
   return
 
-@app.on_message(filters.command("قفل التوجيه بالكتم", "") & filters.group)
+@app.on_message(filters.command("قفل التوجيه ", "") & filters.group)
 def of_forward(c, m):
   idchat = m.chat.id
   name = m.from_user.mention
@@ -121,7 +80,7 @@ def of_forward(c, m):
   m.reply(f"• تم قفل التوجيه بالكتم\n• بواسطة : {name}",quote=True)
   return
 
-@app.on_message(filters.command("فتح التوجيه بالكتم", "") & filters.group)
+@app.on_message(filters.command("فتح التوجيه ", "") & filters.group)
 def on_forward(c, m):
   idchat = m.chat.id
   name = m.from_user.mention
