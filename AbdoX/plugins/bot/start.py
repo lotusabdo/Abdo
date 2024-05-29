@@ -162,7 +162,7 @@ async def start_pm(client, message: Message, _):
         if user_command_count[user_id] > SPAM_THRESHOLD:
             # Block the user if they exceed the threshold
             await app.send_reaction(chat_id, message_id, random.choice(emoji))
-            hu = await message.reply_text(f"**🧑🏻‍💻┋ {message.from_user.mention} بۆت سپام مەکە بەڕێز\n🧑🏻‍💻┋ پێنج چرکە بوەستە**")
+            hu = await message.reply_text(f"**┋ {message.from_user.mention}لا ترسل لي بريدًا عشوائيًا يا عزيزتي\n┋ انتظر خمس ثوانٍ **")
             await asyncio.sleep(3)
             await hu.delete()
             return 
@@ -189,7 +189,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"**🧑🏻‍💻┋ کەسێکی نوێ هاتە ناو بۆت پشکنینی گەشەپێدەران\n\n👤┋ ناوی : {message.from_user.mention}\n👾┋ یوزەری : @{message.from_user.username}\n🆔┋ ئایدی :** `{message.from_user.id}`",
+                    text=f"**┋  لقد دخل شخص جديد إلى فحص مطور برنامج الروبوت الخاص بك\n\n👤┋ الاسم: {message.from_user.mention}\n👾┋ المستخدم: @{message.from_user.username}\n┋ ايدي :** `{message.from_user.id}`",
                 )
             return
         if name[0:3] == "inf":
@@ -212,8 +212,8 @@ async def start_pm(client, message: Message, _):
             key = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text= "🎸 𝖵𝗂𝖽𝖾𝗈", callback_data=f"downloadvideo {query}"),
-                        InlineKeyboardButton(text= "🎸 𝖠𝗎𝖽𝗂𝗈", callback_data=f"downloadaudio {query}"),
+                        InlineKeyboardButton(text= "🎸 فيد", callback_data=f"downloadvideo {query}"),
+                        InlineKeyboardButton(text= "🎸 صوتي", callback_data=f"downloadaudio {query}"),
                 
                     ],
                     [
@@ -233,7 +233,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"**🧑🏻‍💻┋ کەسێکی نوێ هاتە ناو بۆت زانیاری گۆرانی\n\n👤┋ ناوی : {message.from_user.mention}\n👾┋ یوزەری : @{message.from_user.username}\n🆔┋ ئایدی :** `{message.from_user.id}`",
+                    text=f"**لقد دخل شخص جديد إلى فحص مطور برنامج الروبوت الخاص بك\n\n┋ الاسم: {message.from_user.mention}\n┋ المستخدم : @{message.from_user.username}\n┋ ايدي :** `{message.from_user.id}`",
                 )
     else:
         out = private_panel(_)
@@ -249,7 +249,7 @@ async def start_pm(client, message: Message, _):
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"**🧑🏻‍💻┋ کەسێکی نوێ هاتە ناو بۆت\n\n👤┋ ناوی : {message.from_user.mention}\n👾┋ یوزەری : @{message.from_user.username}\n🆔┋ ئایدی :** `{message.from_user.id}`",
+                text=f"**لقد دخل شخص جديد إلى فحص مطور برنامج الروبوت الخاص بك\n\n┋ الاسم: {message.from_user.mention}\n┋ المستخدم : @{message.from_user.username}\n┋ ايدي :** `{message.from_user.id}`",
             )
 
 
@@ -273,7 +273,7 @@ async def start_gp(client, message: Message, _):
         if user_command_count[user_id] > SPAM_THRESHOLD:
             # Block the user if they exceed the threshold
             await app.send_reaction(chat_id, message_id, random.choice(emoji))
-            hu = await message.reply_text(f"**🧑🏻‍💻┋ {message.from_user.mention} بۆت سپام مەکە بەڕێز\n🧑🏻‍💻┋ پێنج چرکە بوەستە**")
+            hu = await message.reply_text(f"**┋ {message.from_user.mention} لا ترسل لي بريدًا عشوائيًا يا عزيزتي\n┋ انتظر خمس ثوانٍ**")
             await asyncio.sleep(3)
             await hu.delete()
             return 
@@ -295,20 +295,20 @@ async def start_gp(client, message: Message, _):
     # Check if Userbot is already in the group
     try:
         userbot = await get_assistant(message.chat.id)
-        message = await message.reply_text(f"**🧑🏻‍💻┋ پشکنین بۆ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) لە گرووپە یان نا •**")
+        message = await message.reply_text(f"**┋ تحقق من [مساعدي](tg://openmessage?user_id={userbot.id}) المجموعة أم لا •**")
         is_userbot = await app.get_chat_member(message.chat.id, userbot.id)
         if is_userbot:
-            await message.edit_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) لە گرووپە ئێستا دەتوانی گەڕان بکەیت بۆ گۆرانی •**")
+            await message.edit_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id}) في المجموعات يمكنك الآن البحث عن الأغاني •**")
     except Exception as e:
         # Userbot is not in the group, invite it
         try:
-            await message.edit_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) لە گرووپ نییە بانگهێشتی دەکەم ..**")
+            await message.edit_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id}) إنه ليس في المجموعة، سأدعوه ..**")
             invitelink = await app.export_chat_invite_link(message.chat.id)
             await asyncio.sleep(1)
             await userbot.join_chat(invitelink)
-            await message.edit_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) لە گرووپە ئێستا دەتوانی گەڕان بکەیت بۆ گۆرانی •**")
+            await message.edit_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id}) في المجموعات يمكنك الآن البحث عن الأغاني•**")
         except Exception as e:
-            await message.edit_text(f"**🧑🏻‍💻┋ ناتوانم [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) بانگهێشت بکەم\nبمکە ئەدمین تاوەکو بتوانم زیادی بکەم •**")
+            await message.edit_text(f"**┋ لا أستطيع دعوة [مساعدي]( tg://openmessage?user_id={userbot.id}) \nلجعلني مسؤولاً حتى أتمكن من إضافته•**")
 
 
 
@@ -352,16 +352,16 @@ async def welcome(client, message: Message):
                     
                     if message.chat.username:
                         await userbot.join_chat(f"**{message.chat.username}**")
-                        await message.reply_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) هاتە گرووپەوە بەهۆی یوزەری گرووپ •**")
+                        await message.reply_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id}) دخلت المجموعة بسبب مستخدم المجموعة•**")
                     else:
                         invitelink = await app.export_chat_invite_link(chid)
                         await asyncio.sleep(1)
-                        messages = await message.reply_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) جۆین دەکات بە بەکارهێنانی لینك •**")
+                        messages = await message.reply_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id})ينضم باستخدام الرابط •**")
                         await userbot.join_chat(invitelink)
                         await messages.delete()
-                        await message.reply_text(f"**🧑🏻‍💻┋ [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) هاتە گرووپەوە بەهۆی لینکی گرووپ •**")
+                        await message.reply_text(f"**┋ [مساعدي](tg://openmessage?user_id={userbot.id})انضم إلى المجموعة بسبب رابط المجموعة •**")
                 except Exception as e:
-                    await message.edit_text(f"**🧑🏻‍💻┋ تکایە بمکە ئەدمین بۆ بانگهێشت کردنی [یاریدەدەرەکەم](tg://openmessage?user_id={userbot.id}) بۆ گرووپ •**")
+                    await message.edit_text(f"** أرجو أن تجعلوني أدمناً للدعوة[مساعدي](tg://openmessage?user_id={userbot.id}) للمجموعه •**")
 
                 await message.reply_video(
                     random.choice(IQ_VIDS),
