@@ -25,7 +25,7 @@ async def ownner(client: Client, message: Message):
        m = await app.get_users(int(x[0]))
        if m.photo:
          async for photo in app.get_chat_photos(x[0],limit=1):
-          await message.reply_photo(photo.file_id,caption=f"⌯𝙺𝙸𝙽𝙶 :{m.first_name}\n⌯ 𝚄𝚂𝙴𝚁 :@{m.username}\n⌯𝙸𝙳 :{m.id}\n⌯𝙲𝙷𝙰𝚃: {message.chat.title}\n⌯𝙸𝙳.𝙲𝙷𝙰𝚃 :{message.chat.id}",reply_markup=InlineKeyboardMarkup(
+          await message.reply_photo(photo.file_id,caption=f"🧞‍♂️ ¦𝙺𝙸𝙽𝙶 :{m.first_name}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{m.username}\n🎃 ¦𝙸𝙳 :{m.id}\n✨ ¦𝙲𝙷𝙰𝚃: {message.chat.title}\n♻️ ¦𝙸𝙳.𝙲𝙷𝙰𝚃 :{message.chat.id}",reply_markup=InlineKeyboardMarkup(
              [              
                [          
                  InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")
@@ -34,7 +34,7 @@ async def ownner(client: Client, message: Message):
             )                     
           )
        else:
-        await message.reply_text(f"⌯𝙺𝙸𝙽𝙶 :{m.first_name}\n⌯𝚄𝚂𝙴𝚁 :@{m.username}\n⌯𝙸𝙳 :{m.id}\n⌯𝙱𝙸𝙾 :{m.bio}\n⌯𝙲𝙷𝙰𝚃: {message.chat.title}\n⌯𝙸𝙳.𝙲𝙷𝙰𝚃 :{message.chat.id}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")],]))
+        await message.reply_text(f"🧞‍♂️ ¦𝙺𝙸𝙽𝙶 :{m.first_name}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{m.username}\n🎃 ¦𝙸𝙳 :{m.id}\n💌 ¦𝙱𝙸𝙾 :{m.bio}\n✨ ¦𝙲𝙷𝙰𝚃: {message.chat.title}\n♻️ ¦𝙸𝙳.𝙲𝙷𝙰𝚃 :{message.chat.id}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")],]))
     else:
         await message.reply_text("الاك محذوف يقلب")
                     
