@@ -13,7 +13,7 @@ def Who(m, user_id):
     return "مشرف"
   elif user.status == ChatMemberStatus.MEMBER:
     return "العضو"
-
+#####==> By JABWA <==#####
 @app.on_message(filters.command("كشف", "") & filters.group)
 def jabwa(c, m):
   name = m.reply_to_message.from_user.first_name
@@ -22,10 +22,10 @@ def jabwa(c, m):
   rank = f"{Who(m,m.reply_to_message.from_user.id)}"
   money = random.randint(1, 100)
   Text =f"""
-⌯𝐍𝐚𝐦𝐞 «» {name}
-⌯𝐈𝐝 «» {id}
-⌯𝐔𝐬𝐞𝐫 «» {user}
-⌯𝐑𝐚𝐧𝐤 «» {rank}
-⌯𝐌𝐨𝐧𝐞𝐲 «» {money} جنيه 😂❤️"""
+⚡╖الاسم «» {name}
+🧞‍♂╢الايدي «» {id}
+💎╢اليوزر «» {user}
+🐣╢الرتبه «» {rank}
+👀╜سعر الكشف «» {money} جنيه 😂❤️"""
   return m.reply(Text)
 
