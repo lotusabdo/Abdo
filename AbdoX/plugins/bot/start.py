@@ -212,12 +212,12 @@ async def start_pm(client, message: Message, _):
             key = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text= "🎸 فيد", callback_data=f"downloadvideo {query}"),
-                        InlineKeyboardButton(text= "🎸 صوتي", callback_data=f"downloadaudio {query}"),
+                        InlineKeyboardButton(text= "- 𝐕 𝐈 𝐃 𝐄 𝐎 ↺", callback_data=f"downloadvideo {query}"),
+                        InlineKeyboardButton(text= "- 𝐀 𝐔 𝐃 𝐈 𝐎 ↺", callback_data=f"downloadaudio {query}"),
                 
                     ],
                     [
-                        InlineKeyboardButton(text="🎧 sᴇᴇ ᴏɴ ʏᴏᴜᴛᴜʙᴇ 🎧", url=link),
+                        InlineKeyboardButton(text="- 𝐒𝐄𝐄 𝐎𝐍 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 ↺", url=link),
                     ],
                 ]
             )
