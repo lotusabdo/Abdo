@@ -4,7 +4,7 @@ import asyncio
 import random
 
 
-from AarohiX import app
+from AbdoX import app
 
 
 from pyrogram.types import (InlineKeyboardButton,
