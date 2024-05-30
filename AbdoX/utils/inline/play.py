@@ -16,6 +16,13 @@ def track_markup(_, user_id, channel, fplay):
             ),
         ],
 
+         [
+            InlineKeyboardButton(
+                text=_["P_B_4"],
+                url=f"https://t.me/EU_TM",
+            ),
+        ],
+
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
@@ -123,6 +130,13 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"Pages Back|3|{videoid}|{chat_id}",
             ),
         ],
+
+        [
+            InlineKeyboardButton(
+                text=_["P_B_4"],
+                url=f"https://t.me/EU_TM",
+            ),
+        ],
         [
             InlineKeyboardButton(
                 text=_["P_B_2"],
@@ -141,7 +155,6 @@ def stream_markup(_, videoid, chat_id):
 
     return buttons
 
-
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
@@ -154,6 +167,13 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
                 callback_data=f"AlinaPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
+        [
+            InlineKeyboardButton(
+                text=_["P_B_4"],
+                url=f"https://t.me/EU_TM",
+            ),
+        ],
+
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -205,6 +225,14 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
             ),
 
         ],
+
+        [
+            InlineKeyboardButton(
+                text=_["P_B_4"],
+                url=f"https://t.me/EU_TM",
+            ),
+        ],
+
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
