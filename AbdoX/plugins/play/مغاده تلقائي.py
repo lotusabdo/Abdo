@@ -3,7 +3,7 @@ from datetime import datetime
 
 import config
 from AbdoX import app
-from AbdoX.core.call import Anony, autoend
+from AbdoX.core.call import Alina, autoend
 from AbdoX.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 from pyrogram.enums import ChatType
