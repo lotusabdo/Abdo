@@ -120,7 +120,7 @@ def stream_markup(_, videoid, chat_id):
 
         [
             InlineKeyboardButton(
-                text= "✚ 𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓 ✚",
+                text= "-𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓↺",
                 callback_data=f"vip_playlist {videoid}"
             ),
         
