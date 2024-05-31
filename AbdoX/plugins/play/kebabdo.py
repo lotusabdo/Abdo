@@ -14,12 +14,12 @@ admin_keyboard = ReplyKeyboardMarkup([
 ], resize_keyboard=True)
 
 # دالة للتعامل مع أمر /admin
-@app.on_message(filters.command("start") &  filters.private & SUDOERS)
+@app.on_message(filters.command("admin") &  filters.private & SUDOERS)
 async def admin(client, message):
     await message.reply("لوحة المفاتيح الخاصة بالمطور", reply_markup=admin_keyboard)
 
 # دالة للتعامل مع الأوامر الأخرى
-@app.on_message(filters.text & ~filters.command("start") & filters.private & SUDOERS)
+@app.on_message(filters.text & ~filters.command("admin") & filters.private & SUDOERS)
 async def handle_commands(client, message):
 #power by teto 
     pass
