@@ -23,26 +23,26 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://t.me/HQ_BX/5",
-        caption=f"- 𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐁𝐨𝐝𝐚 𝐌𝐮𝐬𝐢𝐜 ↺",
+        caption=f"𖥻 WelCoMe To SoUrCe BoDa Music .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- 𝐆 𝐑 𝐎 𝐔 𝐏 ↺", url=f"https://t.me/jx_xll"), 
+                        "𖥻 GrOuP .", url=f"https://t.me/jx_xll"), 
                  InlineKeyboardButton(
-                   "- 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄 ↺",       url=f"https://t.me/l2_2Y"), 
+                   "𖥻 SoUrCe .",       url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "- 𝐀 𝐁 𝐃 𝐎 𝐨 ↺", url=f"https://t.me/EU_TM"), 
+                        "𖥻 𖥻 UR , FaV BoDa .", url=f"https://t.me/EU_TM"), 
                       
              ],[ 
             InlineKeyboardButton(
-                      "- 𝐌 𝐎 𝐇 𝐀 𝐌 𝐄 𝐃 ↺", url=f"https://t.me/YeYeYc"), 
+                      "𖥻 UR , FaV MoHaMeD .", url=f"https://t.me/YeYeYc"), 
                       
              ],[ 
                   InlineKeyboardButton(
-                text="اضغط لاضافتي لمجموعتك⚡",
+                text="𖥻 AdD Me To YoUr GrOuP .",
                 url=f"https://t.me/{app.username}?startgroup=true"),
                 ],
 
@@ -70,7 +70,7 @@ async def yas(client, message):
     usr = await client.get_chat("EU_TM")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"مــعلومـات مــطور الـسـورس \n\n ⌯𝐍𝐚𝐦𝐞:{name}\n ⌯𝐔𝐬𝐫𝐮𝐞:@{usr.username}\n ⌯𝐈𝐝:`{usr.id}`\n ⌯𝐁𝐢𝐨:{usr.bio}\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
+    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 NaMe : {name}\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}\n 𖥻 SoUrCe BoDa .", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -82,8 +82,7 @@ async def yas(client, message):
     )
 
 
-@app.on_message(
-    command(["محمد" , "كابوس","مبرمح السورس"])
+command(["محمد" , "ميدو","حمو","مبرمج السورس"])
     
     
 )
@@ -91,7 +90,7 @@ async def yas(client, message):
     usr = await client.get_chat("YeYeYc")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"مــعلومـات مبرمج الـسـورس \n\n ⌯𝐍𝐚𝐦𝐞:{name}\n ⌯𝐔𝐬𝐫𝐮𝐞:@{usr.username}\n ⌯𝐈𝐝:`{usr.id}`\n ⌯𝐁𝐢𝐨:{usr.bio}\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
+    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 NaMe : {name}\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}\n 𖥻 SoUrCe BoDa .", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
