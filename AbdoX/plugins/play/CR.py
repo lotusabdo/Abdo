@@ -23,18 +23,22 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://t.me/HQ_BX/5",
-        caption=f"𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐁𝐨𝐝𝐚 𝐌𝐮𝐬𝐢𝐜",
+        caption=f"- 𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐁𝐨𝐝𝐚 𝐌𝐮𝐬𝐢𝐜 ↺",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- 𝐆𝐑𝐎𝐔𝐏. ", url=f"https://t.me/jx_xll"), 
+                        "- 𝐆 𝐑 𝐎 𝐔 𝐏 ↺", url=f"https://t.me/jx_xll"), 
                  InlineKeyboardButton(
-                   "- 𝐒𝐎𝐔𝐑𝐂𝐄 .",       url=f"https://t.me/l2_2Y"), 
+                   "- 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄 ↺",       url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "- 𝐃𝐄𝐕 𝐒𝐎𝐔𝐑𝐂𝐄 .", url=f"https://t.me/EU_TM"), 
+                        "- 𝐀 𝐁 𝐃 𝐎 𝐨 ↺", url=f"https://t.me/EU_TM"), 
+                      
+             ],[ 
+            InlineKeyboardButton(
+                      "- 𝐌 𝐎 𝐇 𝐀 𝐌 𝐄 𝐃 ↺", url=f"https://t.me/YeYeYc"), 
                       
              ],[ 
                   InlineKeyboardButton(
@@ -58,7 +62,7 @@ async def huhh(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["بوده" , "فوديكا","مطور السورس"])
+    command(["بودا" , "عبدو","مطور السورس"])
     
     
 )
@@ -67,6 +71,27 @@ async def yas(client, message):
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"مــعلومـات مــطور الـسـورس \n\n ⌯𝐍𝐚𝐦𝐞:{name}\n ⌯𝐔𝐬𝐫𝐮𝐞:@{usr.username}\n ⌯𝐈𝐝:`{usr.id}`\n ⌯𝐁𝐢𝐨:{usr.bio}\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+@app.on_message(
+    command(["محمد" , "كابوس","مبرمح السورس"])
+    
+    
+)
+async def yas(client, message):
+    usr = await client.get_chat("YeYeYc")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"مــعلومـات مبرمج الـسـورس \n\n ⌯𝐍𝐚𝐦𝐞:{name}\n ⌯𝐔𝐬𝐫𝐮𝐞:@{usr.username}\n ⌯𝐈𝐝:`{usr.id}`\n ⌯𝐁𝐢𝐨:{usr.bio}\n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
