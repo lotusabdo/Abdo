@@ -17,7 +17,7 @@ async def set_bot_name(client, message):
     global name
     ask = await app.ask(message.chat.id, "ارسل الاسم الجديد", timeout=300)
     name = ask.text
-    await message.reply_text("تم تعيين الاسم بنجاح")
+    await message.reply_text("تم تعيين الاسم بنجاح •")
 
 caesar_responses = [
     "اسمي {name} يصحبي",
@@ -28,6 +28,8 @@ caesar_responses = [
     "عاوز اي ياعم",
     "انا زهقت منك نعم",
     "هنرخم بقا",
+    "اتفضل ابدا",
+    "مين مات ؟",
 ]
 
 @app.on_message(filters.command(["بوت", "البوت"], ""), group=71135)
