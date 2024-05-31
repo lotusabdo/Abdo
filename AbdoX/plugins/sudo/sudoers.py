@@ -46,13 +46,13 @@ async def userdel(client, message: Message, _):
         await message.reply_text(_["sudo_8"])
 
 
-@app.on_message(command(["/sudolist", "/listsudo", "/sudoers"," مطورين"]) & ~BANNED_USERS)
+@app.on_message(command(["/sudolist", "/listsudo", "/sudoers"," المطورين"]) & ~BANNED_USERS)
 async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton("๏المطورين ๏", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
 
     # await message.reply_photo(photo="https://telegra.ph/file/36dd7c5bd7104baa0eca7.jpg", caption="**» ᴄʜᴇᴄᴋ sᴜᴅᴏ ʟɪsᴛ ʙʏ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ.**\n\n**» ɴᴏᴛᴇ:**  ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ. ", reply_markup=reply_markups)
-    await message.reply_photo(photo="https://telegra.ph/file/36dd7c5bd7104baa0eca7.jpg",caption="**»اعرض قائمة المطورين باستخدام الزر أدناه\n\n» ملاحظة: لا يمكنك رؤيتها‌‌ **",reply_markup=reply_markups)
+    await message.reply_photo(photo="https://telegra.ph/file/609670f31b8d02e512d65.jpg",caption="**»اعرض قائمة المطورين باستخدام الزر أدناه\n\n» ملاحظة: لا يمكنك رؤيتها‌‌ **",reply_markup=reply_markups)
 
 
 # noinspection PyUnreachableCode
