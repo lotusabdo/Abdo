@@ -5,7 +5,7 @@ from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from AbdoX.core.call import Alina
 from AbdoX.utils.database import *
-from pytgcalls.exceptions import NoActiveGroupCall, 
+from pytgcalls.exceptions import NoActiveGroupCall,TelegramServerError 
 
 @app.on_message(filters.regex("اسم المساعد"))
 async def tom_name(client, message):
