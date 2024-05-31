@@ -81,11 +81,11 @@ async def yas(client, message):
         ),
     )
 
-
+@app.on_message(
 command(["محمد" , "ميدو","حمو","مبرمج السورس"])
     
     
-)
+) 
 async def yas(client, message):
     usr = await client.get_chat("YeYeYc")
     name = usr.first_name
