@@ -45,7 +45,7 @@ def get_file_id(msg: Message):
                 setattr(obj, "message_type", message_type)
                 return obj
 
-@app.on_message(filters.command(["المطور","مطور "], ""))
+@app.on_message(filters.command(["المطور","مطور"], ""))
 async def khfzss(client: Client, message: Message):
     usrr = await client.get_chat(OWNER_ID)
     name = usrr.first_name
@@ -53,7 +53,7 @@ async def khfzss(client: Client, message: Message):
     id = usrr.id
     username = usrr.username
     async for photo in client.get_chat_photos(OWNER_ID, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""مــعلومــات مــطور الــبـوت\n\n ⌯𝐍𝐚𝐦𝐞: {name} \n ⌯𝐔𝐬𝐞𝐫: @{username} \n ⌯𝐈𝐝: {id} \n ⌯𝐁𝐢𝐨: {bio} \n 𝐒𝐎𝐔𝐑𝐂𝐄 𝐁𝐎𝐃𝐀""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""𖥻 DeVeLoPer BoT Music .\n\n UsEr : @{username} \n Id : {id} \n BiO : {bio}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
