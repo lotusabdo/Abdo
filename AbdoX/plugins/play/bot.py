@@ -38,7 +38,7 @@ async def caesar_bot(client, message):
     bot_username = (await app.get_me()).username
     bar = random.choice(caesar_responses).format(name=name)
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("اضف البوت الي مجموعتك⚡", url=f"https://t.me/{bot_username}?startgroup=True")]
+        [InlineKeyboardButton("𖥻 AdD Me To YoUr GrOuP .", url=f"https://t.me/{bot_username}?startgroup=True")]
     ])
     
     await message.reply_text(
