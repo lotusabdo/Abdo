@@ -32,19 +32,3 @@ async def byyye(client, message):
             OFFPV.append(client.me.username)
             await message.reply_text("♪ تم تعطيل التواصل  💎 .")
 
-@app.on_message(filters.command(filters.command)
-async def botoot(client: Client, message: Message):
- if not client.me.username in OFFPV:
-  if await joinch(message):
-            return
-  bot_username = client.me.username
-  user_id = message.chat.id
-  if not await is_served_user(client, user_id):
-     await add_served_user(client, user_id)
-  dev = await get_dev(bot_username)
-  if message.from_user.id == dev or message.chat.username in OWNER or message.from_user.id == client.me.id:
-    if message.reply_to_message:
-     u = message.reply_to_message.forward_from
-     try:
-       await client.send_message(u.id, text=message.text)
-       await message.reply_text(f"♪ تم ارسال رساتلك إلي {u.mention} بنجاح  💎 .")
