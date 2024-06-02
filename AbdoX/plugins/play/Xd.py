@@ -32,7 +32,7 @@ async def byyye(client, message):
             OFFPV.append(client.me.username)
             await message.reply_text("♪ تم تعطيل التواصل  💎 .")
 
-@app.on_message(filters.command(filters.private)
+@app.on_message(filters.command(filters.command)
 async def botoot(client: Client, message: Message):
  if not client.me.username in OFFPV:
   if await joinch(message):
