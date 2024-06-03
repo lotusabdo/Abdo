@@ -30,7 +30,7 @@ def Who(m, user_id):
 
 
 
-@app.on_message(filters.command("ك", "") & filters.group)
+@app.on_message(filters.command("كشف", "") & filters.group)
 
 def jabwa(c, m):
 
