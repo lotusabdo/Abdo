@@ -53,51 +53,7 @@ async def huhh(client: Client, message: Message):
     )
 
 
-
-
-
-@app.on_message(
-    command(["بودا" , "عبدو","مطور السورس"])
-    
-    
-)
-async def yas(client, message):
-    usr = await client.get_chat("II_U_6")
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                ],
-            ]
-        ),
-    )
-
-@app.on_message(
-command(["محمد" , "ميدو","حمو","مبرمج السورس"])
-    
-    
-) 
-async def yas(client, message):
-    usr = await client.get_chat("YeYeYc")
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                ],
-            ]
-        ),
-    )
-
-
-@app.on_message(filters.command(["وساننالتف"]), group=73) 
+@app.on_message(filters.command(["مطور السورس","بودا","عبدو"]), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
@@ -110,16 +66,17 @@ async def deev(client: Client, message: Message):
      title = message.chat.title if message.chat.title else message.chat.first_name
      chat_title = f"User : {message.from_user.mention} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
      try:
-      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المطور**\n{chat_title}\nChat Id : `{message.chat.id}`",
+      await client.send_message(username, f"هناك شخص بالحاجه اليك عزيزي المطور\n{chat_title}\nChat Id : {message.chat.id}",
       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
      except:
        pass
      await message.reply_photo(
      photo=photo,
-     caption=f"**𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}**",
+     caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN \n\n User : @{username}\n\n Bio :{bio}",
      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
      try:
        os.remove(photo)
      except:
         pass
+
 
