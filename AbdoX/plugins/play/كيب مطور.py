@@ -68,7 +68,7 @@ source_ch = "VVHH9"
 
 
 
-start_text = "**welcome {} , its just a test bot √**"
+Abdo_text = "**welcome {} , its just a test bot √**"
 
 
 
@@ -313,7 +313,7 @@ def del_devuser():
 sudo_message = f"**💌╖اهلا بيك حبيبي آلمـطـور\n⚙️╢ تقدر تتحكم باوامر البوت عن طريق\n🔍╢ الكيبور اللي ظهرتلك تحت ↘️\n🔰╜ للدخول لقناة السورس @{show_devchannel()}**"
 
 
-start_buttons = InlineKeyboardMarkup([[
+Abdo_buttons = InlineKeyboardMarkup([[
 InlineKeyboardButton("ch",url=f"https://t.me/{show_devchannel()}")
 ]])
 
@@ -335,8 +335,8 @@ InlineKeyboardButton("Ch",url=f"https://t.me/{show_devchannel()}")
 
 
 
-@app.on_message(filters.command("start")&filters.private)
-async def app_start(c:Client,m:Message):
+@app.on_message(filters.command("Abdo")&filters.private)
+async def app_Abdo(c:Client,m:Message):
 	do = requests.get(f"https://api.telegram.org/bot{token}/getChatMember?chat_id=@{show_channel()}&user_id={m.from_user.id}").text
 	user = m.from_user.id
 	mm = m.from_user.mention
@@ -374,7 +374,7 @@ async def app_start(c:Client,m:Message):
 		return await m.reply(sudo_message,reply_markup=sudo_keyboard)
 	
 	if is_user(id=user) and not is_band(user):
-		return await m.reply(start_text,reply_markup=start_buttons)
+		return await m.reply(Abdo_text,reply_markup=Abdo_buttons)
 		
 	if (not is_user(id=str(user))):
 		add_user(id=user)
@@ -434,7 +434,7 @@ async def del_keyboard(c:Client,m:Message):
 	sudo = open(f"sudo{bot_id}.json","r").read()
 	
 	if str(user) in mainSudo or str(user) in sudo or str(user) in mainSudoVII or (user) in owner or int(user) == dev_owner:
-		return await m.reply("**◍ تم حذف الكيبورد بنجاح  /start\n√**",reply_markup=ReplyKeyboardRemove())
+		return await m.reply("**◍ تم حذف الكيبورد بنجاح  /adm\n√**",reply_markup=ReplyKeyboardRemove())
 	return await m.reply("**◍ انت لست مطور في البوت \n√**")
 
 @app.on_message(filters.command("^نسخه الكل$","")&filters.private)
