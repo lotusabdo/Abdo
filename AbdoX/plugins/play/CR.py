@@ -62,7 +62,7 @@ async def huhh(client: Client, message: Message):
     
 )
 async def yas(client, message):
-    usr = await client.get_chat("II_U_")
+    usr = await client.get_chat("II_U_6")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
