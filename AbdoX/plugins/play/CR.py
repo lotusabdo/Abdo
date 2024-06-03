@@ -65,7 +65,7 @@ async def deev(client: Client, message: Message):
      photo = await client.download_media(photo)
      link = f"https://t.me/{message.chat.username}"
      title = message.chat.title if message.chat.title else message.chat.first_name
-     chat_title = f"User : @{usr.username} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     chat_title = f"User : {message.chat.usernamee} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
      try:
       await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي مطور السورس**\n{chat_title}\nChat Id : `{message.chat.id}`",
       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
@@ -93,7 +93,7 @@ async def deev(client: Client, message: Message):
      photo = await client.download_media(photo)
      link = f"https://t.me/{message.chat.username}"
      title = message.chat.title if message.chat.title else message.chat.first_name
-     chat_title = f"User : @{usr.username} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     chat_title = f"User : {message.chat.username} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
      try:
       await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المبرمج**\n{chat_title}\nChat Id : `{message.chat.id}`",
       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
