@@ -99,7 +99,7 @@ async def yas(client, message):
 
 @app.on_message(filters.command(["المطور", "《مطور السورس》", "سينزر", "صاحب السورس", "يا يوسف"], ""), group=73) 
 async def deev(client: Client, message: Message):
-     user = await client.get_chat(chat_id="I5LPL")
+     user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
      username = user.username 
      bio = user.bio
