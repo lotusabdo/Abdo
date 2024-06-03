@@ -54,7 +54,7 @@ async def huhh(client: Client, message: Message):
 
 
 
-@app.on_message(filters.command(["بودا" , "عبدو","مطور السورس"] ""), group=73) 
+@app.on_message(filters.command(["بودا" , "عبدو","مطور السورس"]), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
@@ -82,7 +82,7 @@ async def deev(client: Client, message: Message):
 
 
 
-@app.on_message(filters.command(["محمد" , "ميدو","حمو","مبرمج السورس"] ""), group=73) 
+@app.on_message(filters.command(["محمد" , "ميدو","حمو","مبرمج السورس"]), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="YeYeYc")
      name = user.first_name
