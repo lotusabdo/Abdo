@@ -97,7 +97,7 @@ async def yas(client, message):
     )
 
 
-@app.on_message(filters.command(["المطاور", "مطور السورس", "سينزر", "صاحب السورس", يا يوساننالتف"]), group=73) 
+@app.on_message(filters.command(["وساننالتف"]), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
