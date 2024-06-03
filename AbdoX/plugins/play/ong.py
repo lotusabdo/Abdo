@@ -6,9 +6,9 @@ from AbdoX import app
 
 @app.on_message(filters.command(['نداء','ن'], ""))
 async def call_random_members(client: Client, message: Message):
-    chat_id = message.chat.id
+    m.user.id = message.m.user.id
     members = [
-        member for member in client.get_chat_memberss(chat_id)
+        member for member in client.get_chat_memberss(m.user.id)
         if not member.user.is_bot
     ]
     random_members = random.choice(members)
@@ -20,15 +20,15 @@ async def call_random_members(client: Client, message: Message):
         f"• يـا راس السطل تعال {random_members_mention}",
         f"• انت ليش قمر هكي 🌚♥ {random_members_mention}"
     ])
-    client.send_message(chat_id, random_message, reply_to_message_id=message.message_id, parse_mode='markdown')
+    client.send_message(m.user.id, random_message, reply_to_message_id=message.message_id, parse_mode='markdown')
 
 
 
 @app.on_message(filters.command(['زوجني','ز'], ""))
 async def call_random_members(client: Client, message: Message):
-    chat_id = message.chat.id
+    m.user.id = message.m.user.id
     members = [
-        member for member in client.get_chat_memberss(chat_id)
+        member for member in client.get_chat_memberss(m.user.id)
         if not member.user.is_bot
     ]
     random_members = random.choice(members)
