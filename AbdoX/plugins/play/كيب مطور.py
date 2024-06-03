@@ -434,7 +434,7 @@ async def del_keyboard(c:Client,m:Message):
 	sudo = open(f"sudo{bot_id}.json","r").read()
 	
 	if str(user) in mainSudo or str(user) in sudo or str(user) in mainSudoVII or (user) in owner or int(user) == dev_owner:
-		return await m.reply("**◍ تم حذف الكيبورد بنجاح  /adm\n√**",reply_markup=ReplyKeyboardRemove())
+		return await m.reply("**◍ تم حذف الكيبورد بنجاح  /start\n√**",reply_markup=ReplyKeyboardRemove())
 	return await m.reply("**◍ انت لست مطور في البوت \n√**")
 
 @app.on_message(filters.command("^نسخه الكل$","")&filters.private)
