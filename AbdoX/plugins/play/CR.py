@@ -54,6 +54,49 @@ async def huhh(client: Client, message: Message):
 
 
 
+
+
+@app.on_message(
+    command(["بودا" , "عبدو","مطور السورس"])
+    
+    
+)
+async def yas(client, message):
+    usr = await client.get_chat("II_U_6")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+@app.on_message(
+command(["محمد" , "ميدو","حمو","مبرمج السورس"])
+    
+    
+) 
+async def yas(client, message):
+    usr = await client.get_chat("YeYeYc")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
 @app.on_message(filters.command(["المطور", "《مطور السورس》", "سينزر", "صاحب السورس", "يا يوسف"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
@@ -73,7 +116,7 @@ async def deev(client: Client, message: Message):
        pass
      await message.reply_photo(
      photo=photo,
-     caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}",
+     caption=f"**Developer Name : {name}** \n**ძᥱ᥎ᥣ᥆ρᥱᖇ ᥙ᥉ᥱᖇ ꪀᥲꪔᥱ : @{username}**\n**{bio}**",
      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
      try:
        os.remove(photo)
