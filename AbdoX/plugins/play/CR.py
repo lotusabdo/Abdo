@@ -97,7 +97,7 @@ async def yas(client, message):
     )
 
 
-@app.on_message(filters.command(["المطور", "《مطور السورس》", "سينزر", "صاحب السورس", "يا يوسف"], ""), group=73) 
+@app.on_message(filters.command(["المطاور", "مطور السورس", "سينزر", "صاحب السورس", يا يوساننالتف"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
@@ -116,9 +116,10 @@ async def deev(client: Client, message: Message):
        pass
      await message.reply_photo(
      photo=photo,
-     caption=f"**Developer Name : {name}** \n**ძᥱ᥎ᥣ᥆ρᥱᖇ ᥙ᥉ᥱᖇ ꪀᥲꪔᥱ : @{username}**\n**{bio}**",
+     caption=f"**𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}**",
      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
      try:
        os.remove(photo)
      except:
         pass
+
