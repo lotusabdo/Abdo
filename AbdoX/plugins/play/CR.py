@@ -54,7 +54,7 @@ async def huhh(client: Client, message: Message):
 
 
 
-@app.on_message(filters.command(["بودا" , "عبدو","مطور السورس"]), group=73) 
+@app.on_message(filters.command(["المطور", "《مطور السورس》", "سينزر", "صاحب السورس", "يا يوسف"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
@@ -65,46 +65,17 @@ async def deev(client: Client, message: Message):
      photo = await client.download_media(photo)
      link = f"https://t.me/{message.chat.username}"
      title = message.chat.title if message.chat.title else message.chat.first_name
-     chat_title = f"User : {message.chat.usernamee} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     chat_title = f"User : {message.from_user.mention} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
      try:
-      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي مطور السورس**\n{chat_title}\nChat Id : `{message.chat.id}`",
+      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المطور**\n{chat_title}\nChat Id : `{message.chat.id}`",
       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
      except:
        pass
      await message.reply_photo(
      photo=photo,
-     caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
+     caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}",
      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
      try:
        os.remove(photo)
      except:
         pass
-
-
-
-@app.on_message(filters.command(["محمد" , "ميدو","حمو","مبرمج السورس"]), group=73) 
-async def deev(client: Client, message: Message):
-     user = await client.get_chat(chat_id="YeYeYc")
-     name = user.first_name
-     username = user.username 
-     bio = user.bio
-     user_id = user.id
-     photo = user.photo.big_file_id
-     photo = await client.download_media(photo)
-     link = f"https://t.me/{message.chat.username}"
-     title = message.chat.title if message.chat.title else message.chat.first_name
-     chat_title = f"User : {message.chat.username} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
-     try:
-      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المبرمج**\n{chat_title}\nChat Id : `{message.chat.id}`",
-      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
-     except:
-       pass
-     await message.reply_photo(
-     photo=photo,
-     caption=f"𖥻 SoUrCe DeVeLoPer InFoRmaTioN\n\n 𖥻 UsEr : @{usr.username}\n 𖥻 Id : `{usr.id}`\n 𖥻 BiO : {usr.bio}", 
-     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
-     try:
-       os.remove(photo)
-     except:
-        pass
-
