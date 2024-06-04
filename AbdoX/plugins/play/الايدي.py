@@ -68,14 +68,10 @@ async def muid(client: Client, message):
     idd = len(id[user.id])
     
     caption = f"⌯𝐍𝐚𝐦𝐞 : {first_name}\n⌯𝐢𝐝 : {user_id}\n⌯𝐔𝐬𝐞𝐫 : [@{username}]\n⌯𝐁𝐢𝐨 : {bio}"
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                
-           
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"{idd} ♥", callback_data=f"heart{user_id}")]])
     
+    await message.reply_photo(photo=photo, caption=caption, reply_markup=reply_markup)
+
 @app.on_callback_query(filters.regex("heart"))
 async def heart(client, query: CallbackQuery):
     callback_data = query.data.strip()
@@ -94,12 +90,6 @@ async def heart(client, query: CallbackQuery):
     idd = len(id[user.id])
     
     caption = f"⌯𝐍𝐚𝐦𝐞 : {first_name}\n⌯𝐢𝐝 : {user_id}\n⌯𝐔𝐬𝐞𝐫 : [@{username}]\n⌯𝐁𝐢𝐨 : {bioo}"
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                ],
-            ]
-        ),
-    )
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"{idd} ♥", callback_data=f"heart{user_id}")]])
+    
+    await query.edit_message_text(caption, reply_markup=reply_markup)
