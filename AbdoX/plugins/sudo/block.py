@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import add_gban_user, remove_gban_user
-from AbdoX .utils.decorators.language import language
-from AbdoX .utils.extraction import extract_user
+from AbdoX import app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import add_gban_user, remove_gban_user
+from AbdoX.utils.decorators.language import language
+from AbdoX.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
