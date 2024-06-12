@@ -75,7 +75,7 @@ txt = [
         
 
 
-@app.on_message(filters.command(["حروف","احرف"], ""))
+@app.on_message(filters.command(["حروف","حرف ✯"], ""))
 
 async def ahrof(client: Client, message: Message):
 
