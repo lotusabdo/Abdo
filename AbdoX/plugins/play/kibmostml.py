@@ -146,8 +146,6 @@ async def ihd(client: Client, message: Message):
         )
 
 
-        )
-
 @app.on_message(filters.command(["فيلم"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,34)
