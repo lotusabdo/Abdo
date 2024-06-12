@@ -145,18 +145,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["✨الشيخ نقشبندي", "النقشبندي", "نقشبندي"], ""))
-async def ihd(client: Client, message: Message):
-    rl = random.randint(1,90)
-    url = f"https://t.me/ggcnjj/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🥹♥ ¦ تـم اختيـار الشيخ نقشبندي لـك",parse_mode=enums.ParseMode.HTML)
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        message.from_user.first_name, url=f"https://t.me/{message.from_user.username}")
-                ],
-            ]
+
         )
 
 @app.on_message(filters.command(["فيلم"], ""))
@@ -187,19 +176,3 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["كت"], ""))
-async def ihd(client: Client, message: Message):
-    rl = random.randint(4,42)
-    url = f"https://t.me/wffhvv/{rl}"
-    await client.send_photo(message.chat.id,url,caption="🐉 ¦ تـم اختيـار تويت لـك",parse_mode=enums.ParseMode.HTML)
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        message.from_user.first_name, url=f"https://t.me/{message.from_user.username}")
-
-                   ],
-
-            ]
-        )
-    
