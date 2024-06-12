@@ -21,7 +21,7 @@ from pyrogram.errors import FloodWait
 iddof = []
 id = {}
 
-@app.on_message(filters.command(["تعطيل الايدي", "قفل الايدي"], "") & filters.group)
+@app.on_message(filters.command(["تت الايدي", "تت الايدي"], "") & filters.group)
 async def iddlock(client: Client, message):
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
@@ -32,7 +32,7 @@ async def iddlock(client: Client, message):
     else:
         return await message.reply_text("⌯عذرا عزيزي هذا الامر للادمن الجروب فقط")
 
-@app.on_message(filters.command(["فتح الايدي", "تفعيل الايدي"], "") & filters.group)
+@app.on_message(filters.command(["تتت الايدي", "تت الايدي"], "") & filters.group)
 async def iddopen(client: Client, message):
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
@@ -43,7 +43,7 @@ async def iddopen(client: Client, message):
     else:
         return await message.reply_text("⌯عذرا عزيزي هذا الامر للادمن الجروب فقط")
 
-@app.on_message(filters.command(["ايدي","ا"], ""))
+@app.on_message(filters.command(["اازلاتاا"], ""))
 async def muid(client: Client, message):
     if message.chat.id in iddof:
         return await message.reply_text("⌯تم تعطيل امر الايدي من قبل المشرفين")
