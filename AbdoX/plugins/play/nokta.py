@@ -8,7 +8,7 @@ from typing import Union
 from AbdoX import app
 
 
-@app.on_message(command("احكام","احكام ✯"))
+@app.on_message(command("احكام"))
 async def bottttt(client, message):
     selections = [" ※ صورة وجهك او رجلك او خشمك او يدك ؟ ",
 " ※ اصدر اي صوت يطلبه منك الاعبين ؟ ",
