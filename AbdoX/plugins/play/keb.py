@@ -13,19 +13,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyb
 async def cpanel(_, message: Message):             
         text = "اهلا بك بك عزيزي العضو اليك كيب الاعضاء⚡"
         kep = ReplyKeyboardMarkup([
-[" المطور", "مطور السورس"],
-["السورس","يـوتيوب "],
-["اقتباس","استوري"],
-["انمي","متحركه"],
-["تويت", "صراحه"],
-["نكته","احكام"],
-[" لو خيروك","انصحني"],
-["قران","نقشبندي"],
-["اذكار","كتابات"],
-["حروف","بوت"],
-["غنيلي","سوال"],
-["تلاوات","عبدالباسط"],
-["افاتار بنات","افاتار شباب"],
+[" المطور ‌✯", "مطور السورس ‌✯"],
+["السورس ‌✯","يـوتيوب ‌✯"],
+["استوري ✯"],
+["انمي ‌✯","متحركه ‌✯"],
+["كت ‌✯", "صراحه ‌✯"],
+["غنيلي ‌✯"],
+["قران ‌✯","نقشبندي ‌✯"],
+["انصحني ‌✯","اقتباس ‌✯"],
+["استوريهات ‌✯"],
+["تلاوات ‌✯","عبدالباسط ‌✯"],
+["صور بنات ‌✯","صور ولاد ‌✯"],
 ["❎ ¦ حذف الكيبورد"]], resize_keyboard=True)
         await message.reply(
               text=text,
@@ -44,7 +42,7 @@ async def upbkgt(client: Client, message: Message):
         text="""❎ ¦ تم حذف الكيبورد بنجاح""",
         reply_markup=ReplyKeyboardRemove()
     )
-@app.on_message(filters.regex("يـوتيوب"))
+@app.on_message(filters.regex("يـوتيوب ‌✯"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
         photo=f"https://telegra.ph/file/73299cc44862f1ec277dd.jpg",
