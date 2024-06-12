@@ -198,12 +198,7 @@ async def ihd(client: Client, message: Message):
                     InlineKeyboardButton(
                         message.from_user.first_name, url=f"https://t.me/{message.from_user.username}")
                         
-                        
-@app.on_message(filters.command(["متحركه ✯"], ""))
-async def almortagel(client: Client, message: Message):
-    rl = random.randint(2,926)
-    url = f"https://t.me/GifWaTaN/{rl}"
-    await client.send_animation(message.chat.id,url,caption="💙 ¦ تـم اختيـار ملصق لـك")
+                    
 
 @app.on_message(filters.command(["تلاوات ✯"], ""))
 async def almortagel(client: Client, message: Message):
