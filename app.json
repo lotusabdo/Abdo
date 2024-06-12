@@ -1,7 +1,7 @@
 {
-    "name": "𝙄𝙌 𝙈𝙐𝙎𝙄𝘾 ♥️•",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://graph.org/file/5eb96c4141db368f17b84.jpg",
+    "name": "SoUrCe BoDa",
+    "description": "سورس بودا ميوزك",
+    "logo": "https://te.legra.ph/file/a9f523487c6a82d827dfd.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -12,7 +12,7 @@
     "pyrogram"
     ],
     "env": {
-      "API_ID": {
+         "API_ID": {
         "description": "Get this value from https://my.telegram.org",
         "value": "17154185",
         "required": true
@@ -21,55 +21,40 @@
         "description": "Get this value from https://my.telegram.org",
         "value": "7d24797dd1d72adbe8ee2596be2904d0",
         "required": true
-      },
+          }, 
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "6399913438:AAGOUWLrzcbNSznyhm2Rj8Z0_ShZ2sFLQSA",
-        "required": true
-      },
-      "BOT_NAME": {
-        "description": "A Bot's name from your bot",
-        "value": "اليكس",
-        "required": true
-      },
-      "ASSUSERNAME": {
-        "description": "A Bot's ass from your assistant account",
-        "value": "مساعد",
-        "required": true
-      },
-      "BOT_USERNAME": {
-        "description": "A Bot's ass from your assistant account",
-        "value": "jvhgvbbot",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority",
+        "description": "⦗ @Botfather ⦘ ↫ تـــوكـــن الـبـوت",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
+        "description": "⦗ ايـــدي المطـــور ⦘ ↫ مطـــور بـــوت الميـــوزك",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @STRINGSEASO_NBOT on Telegram.",
-        "value": "BAEFwIkAmTjP8ih0OlPvnl6vVZJd8x0R_Ug1cPvupcEfNZD48gkW193BZB_h0DFHKwxd8R5Tiq5DUt5VIuCqmNC4uL9h8-hU-qvdnAMYtnB-2_JDQ5gK46aUC_MhuzkBCJzPHBdGezTS1fMGrUUfXldVC9WCbBW-x4_ceRtlhPbTb7is3sMEd4RGTBkTgtOU0Cff9kdif-99yDmHfJYUlTjwQnSC1SbMsjSOC_38ehi0eE-kV-noY67EZzZxbznohaqpw8PV04LfKFILFA8bHrouxgrNDSIZtq43wQ3k4YyvP4eoWQ0PkU8b8-iC_dSqws2-6Ugm8D5bzUHBMEdy1yT8oKlQcgAAAAGhYQlGAA",
+        "description": "⦗ V2 ⦘ ↫ كـود جلسـة الحسـاب المساعـد لـ الميـوزك",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
-        "value": "b9154848-55a3-4afe-9db3-1ae48ecec914",
+        "description": "⦗ https://dashboard.heroku.com/account ⦘ ادخـل كود ايبـي كـي",
+        "value": "HRKU-4ba2e27e-8a56-4cde-a585-137c693018b3",
         "required": false
       },
+          "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "mongodb+srv://meshoe3:meshoe3@cluster0.bvaskli.mongodb.net/?retryWrites=true&w=majority",
+        "required": true 
+     },      
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app name",
+        "description": "⦗ اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول ⦗ صغيـره فقـط",
         "value": "",
         "required": false
       },
       "LOGGER_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "-1002038806549",
+        "description": "ايـدي قروب السـجل",
+        "value": "-1002107910251",
         "required": true
       }
     },
@@ -84,5 +69,11 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      },
       "stack": "container"
   }
