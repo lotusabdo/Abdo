@@ -38,7 +38,7 @@ from strings.filters import command
 force_btn = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(   
+            InlineKeyboardMarkup(   
               text=f"قناة السورس🫧", url=f"https://t.me/l2_2Y",)                        
         ],        
     ]
