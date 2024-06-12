@@ -121,7 +121,7 @@ txt = [
         
 
 
-@app.on_message(filters.command(["لو خيروك","خيروك"], ""))
+@app.on_message(filters.command(["لو خيروك","لو خيروك ✯"], ""))
 
 async def khyrok(client: Client, message: Message):
 
