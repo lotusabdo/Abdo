@@ -200,29 +200,3 @@ async def ihd(client: Client, message: Message):
                         
                         
 
-@app.on_message(filters.command(["تلاوات ✯"], ""))
-async def ihd(client: Client, message: Message):
-    rl = random.randint(24,618)
-    url = f"https://t.me/EIEI06/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🥹♥ ¦ تـم اختيـار تلاوة قرآنيه لـك")
-    
-
-@app.on_message(filters.command(["سورة ✯"], ""))
-async def ihd(client: Client, message: Message):
-    rl = random.randint(2,82)
-    url = f"https://t.me/opuml/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🥹♥ ¦ تـم اختيـار ايـه قرآنيه لـك")
-
-@app.on_message(filters.command(["عبدالباسط ✯"], ""))
-async def ihd(client: Client, message: Message):
-    rl = random.randint(7,265)
-    url = f"https://t.me/telawatnader/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🥹♥ ¦ تـم اختيـار الشيخ عبدالباسط لـك")
-    
-
-
-                   ],
-
-            ]
-        )
-    
