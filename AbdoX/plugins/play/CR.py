@@ -17,7 +17,7 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["سورس","السورس"])
+    command(["سورس","✯ السورس","السورس"])
     
 )
 async def huhh(client: Client, message: Message):
@@ -53,7 +53,7 @@ async def huhh(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.command(["مطور السورس","بودا","عبدو","فوديكا"], ""), group=73) 
+@app.on_message(filters.command(["مطور السورس","بودا","عبدو","مطور السورس ✯"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
