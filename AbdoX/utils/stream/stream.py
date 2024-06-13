@@ -5,14 +5,14 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from AbdoX  import Carbon, YouTube, app
-from AbdoX .core.call import Alina
-from AbdoX .misc import db
-from AbdoX .utils.database import add_active_video_chat, is_active_chat
-from AbdoX .utils.exceptions import AssistantErr
-from AbdoX .utils.inline import aq_markup, queuemarkup, close_markup, stream_markup, stream_markup2
-from AbdoX .utils.pastebin import AlinaBin
-from AbdoX .utils.stream.queue import put_queue, put_queue_index
+from AbdoX import Carbon, YouTube, app
+from AbdoX.core.call import Alina
+from AbdoX.misc import db
+from AbdoX.utils.database import add_active_video_chat, is_active_chat
+from AbdoX.utils.exceptions import AssistantErr
+from AbdoX.utils.inline import aq_markup, queuemarkup, close_markup, stream_markup, stream_markup2
+from AbdoX.utils.pastebin import AlinaBin
+from AbdoX.utils.stream.queue import put_queue, put_queue_index
 from youtubesearchpython.__future__ import VideosSearch
 
 
