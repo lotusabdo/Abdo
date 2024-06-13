@@ -1,5 +1,5 @@
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import get_lang, is_maintenance
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import get_lang, is_maintenance
 from strings import get_string
 
 
