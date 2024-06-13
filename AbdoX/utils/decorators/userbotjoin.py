@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
-from AbdoX  import YouTube, app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import (
+from AbdoX import YouTube, app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from AbdoX .utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from AbdoX .utils.inline import botplaylist_markup
+from AbdoX.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
