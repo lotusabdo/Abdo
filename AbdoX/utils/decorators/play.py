@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AbdoX  import YouTube, app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import (
+from AbdoX import YouTube, app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -86,7 +86,7 @@ def PlayWrapper(command):
                 else:
                     if message.from_user.id not in admins:
                         return await message.reply_text(_["play_4"])
-        if message.command[0][0] == "v" or message.command[0][0] == "ڤ":
+        if message.command[0][0] == "v" or message.command[0][0] == "ف":
             video = True
         else:
             if "-v" in message.text:
