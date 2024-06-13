@@ -1,5 +1,5 @@
 from pyrogram import filters
-from AbdoX .utils.admin_check import admin_check
+from AbdoX.utils.admin_check import admin_check
 
 
 USE_AS_BOT = True
