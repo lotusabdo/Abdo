@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from AbdoX .misc import db
-from AbdoX .utils.formatters import check_duration, seconds_to_min
+from AbdoX.misc import db
+from AbdoX.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
