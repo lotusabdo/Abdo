@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from AbdoX  import app
+from AbdoX import app
 
 waifu_api_url = 'https://api.waifu.im/search'
 
