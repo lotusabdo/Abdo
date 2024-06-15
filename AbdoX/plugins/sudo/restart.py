@@ -10,9 +10,9 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from AbdoX  import app
-from AbdoX .misc import HAPP, SUDOERS, XCB
-from AbdoX .utils.database import (
+from AbdoX import app
+from AbdoX.misc import HAPP, SUDOERS, XCB
+from AbdoX.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
