@@ -1,9 +1,9 @@
-from AbdoX  import app
+from AbdoX import app
 from config import BOT_USERNAME
 from pyrogram import filters
-from AbdoX .utils.alina_ban import admin_filter
-from AbdoX .mongo.notesdb import *
-from AbdoX .utils.alinadb import user_admin
+from AbdoX.utils.alina_ban import admin_filter
+from AbdoX.mongo.notesdb import *
+from AbdoX.utils.alinadb import user_admin
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , Message , CallbackQuery
 from pyrogram.enums import ChatMemberStatus
 
