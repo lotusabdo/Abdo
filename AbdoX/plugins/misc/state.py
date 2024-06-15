@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import pycountry
-from AbdoX  import app 
+from AbdoX import app 
 
 @app.on_message(filters.command("get_states"))
 def get_states(client, message):
