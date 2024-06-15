@@ -2,9 +2,9 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 from strings.filters import command
-from AbdoX  import app
-from AbdoX .utils.database import get_lang, set_lang
-from AbdoX .utils.decorators import ActualAdminCB, language, languageCB
+from AbdoX import app
+from AbdoX.utils.database import get_lang, set_lang
+from AbdoX.utils.decorators import ActualAdminCB, language, languageCB
 from config import BANNED_USERS
 from strings import get_string, languages_present
 

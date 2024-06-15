@@ -2,9 +2,9 @@ from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from unidecode import unidecode
 from strings.filters import command
-from AbdoX  import app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import (
+from AbdoX import app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import (
     get_active_chats,
     get_active_video_chats,
     remove_active_chat,

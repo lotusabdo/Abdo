@@ -1,6 +1,6 @@
 import aiohttp
 from io import BytesIO
-from AbdoX  import app
+from AbdoX import app
 from pyrogram import filters
 
 

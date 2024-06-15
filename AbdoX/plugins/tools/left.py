@@ -1,4 +1,4 @@
-from AbdoX  import app
+from AbdoX import app
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.errors import RPCError

@@ -1,7 +1,7 @@
 from io import BytesIO
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from AbdoX  import app
+from AbdoX import app
 from httpx import AsyncClient, Timeout
 # -----------------------------------------------------------------
 fetch = AsyncClient(

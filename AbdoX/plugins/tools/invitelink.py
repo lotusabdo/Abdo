@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import Client, filters
 from strings.filters import command
 from pyrogram.types import Message
-from AbdoX  import app
+from AbdoX import app
 
 @app.on_message(command(["/link","لینک","لینك"]) & ~filters.bot & ~filters.private)
 async def invitelink(client, message):

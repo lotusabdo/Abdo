@@ -9,8 +9,8 @@ from pyrogram.enums import *
 from strings.filters import command
 from config import BANNED_USERS
 #BOT FILE NAME
-from AbdoX  import app as app
-from AbdoX .mongo.couples_db import _get_image, get_couple
+from AbdoX import app as app
+from AbdoX.mongo.couples_db import _get_image, get_couple
 
 def dt():
     now = datetime.now()

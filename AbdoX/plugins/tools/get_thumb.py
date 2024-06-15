@@ -1,5 +1,5 @@
 from pyrogram import filters
-from AbdoX  import app
+from AbdoX import app
 import requests
 from bs4 import BeautifulSoup
 import re

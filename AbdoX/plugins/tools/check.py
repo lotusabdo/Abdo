@@ -2,7 +2,7 @@ from pyrogram import Client, filters, types
 from pyrogram.errors import *
 import re
 import time
-from AbdoX  import app
+from AbdoX import app
 import config
 from config import BOT_USERNAME
 

@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .core.call import Alina
-from AbdoX .utils import bot_sys_stats
-from AbdoX .utils.decorators.language import language
-from AbdoX .utils.inline import supp_markup
+from AbdoX import app
+from AbdoX.core.call import Alina
+from AbdoX.utils import bot_sys_stats
+from AbdoX.utils.decorators.language import language
+from AbdoX.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 

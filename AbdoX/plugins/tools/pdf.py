@@ -7,10 +7,10 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .utils.errors import capture_err
+from AbdoX import app
+from AbdoX.utils.errors import capture_err
 
-from AbdoX .core.sections import section
+from AbdoX.core.sections import section
 
 
 async def convert(

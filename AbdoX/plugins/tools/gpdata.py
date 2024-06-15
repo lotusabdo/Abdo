@@ -1,12 +1,12 @@
 from pyrogram import enums
 from pyrogram.enums import ChatType
 from pyrogram import filters, Client
-from AbdoX  import app
+from AbdoX import app
 from config import OWNER_ID
-from AbdoX .misc import SUDOERS
+from AbdoX.misc import SUDOERS
 from pyrogram.types import Message
-from AbdoX .utils.database import add_served_chat, delete_served_chat
-from AbdoX .utils.alina_ban import admin_filter, sudo_filter
+from AbdoX.utils.database import add_served_chat, delete_served_chat
+from AbdoX.utils.alina_ban import admin_filter, sudo_filter
 from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from strings.filters import command
 
