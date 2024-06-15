@@ -1,8 +1,8 @@
 import random
 from typing import Dict, List, Union
 
-from AbdoX  import userbot
-from AbdoX .core.mongo import mongodb
+from AbdoX import userbot
+from AbdoX.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
