@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .core.call import Alina
+from AbdoX import app
+from AbdoX.core.call import Alina
 
 welcome = 20
 close = 30
