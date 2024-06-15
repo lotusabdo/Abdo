@@ -3,11 +3,11 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from AbdoX  import app
-from AbdoX .utils import help_pannel
-from AbdoX .utils.database import get_lang
-from AbdoX .utils.decorators.language import LanguageStart, languageCB
-from AbdoX .utils.inline.help import help_back_markup, private_help_panel
+from AbdoX import app
+from AbdoX.utils import help_pannel
+from AbdoX.utils.database import get_lang
+from AbdoX.utils.decorators.language import LanguageStart, languageCB
+from AbdoX.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 
 
