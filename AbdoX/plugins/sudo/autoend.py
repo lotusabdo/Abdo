@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import autoend_off, autoend_on
+from AbdoX import app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import autoend_off, autoend_on
 
 
 @app.on_message(filters.command("autoend") & SUDOERS)
