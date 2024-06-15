@@ -1,5 +1,5 @@
-from AbdoX  import app
-from AbdoX .utils.database import get_cmode
+from AbdoX import app
+from AbdoX.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
