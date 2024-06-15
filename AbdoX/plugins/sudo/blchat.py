@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from AbdoX .utils.decorators.language import language
+from AbdoX import app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from AbdoX.utils.decorators.language import language
 from config import BANNED_USERS
 
 
