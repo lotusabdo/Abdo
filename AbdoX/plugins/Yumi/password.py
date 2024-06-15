@@ -1,7 +1,7 @@
 import random, os
 from pyrogram import Client, filters, enums 
 from strings.filters import command
-from AbdoX  import app
+from AbdoX import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
