@@ -1,4 +1,4 @@
-from AbdoX .utils.mongo import db
+from AbdoX.utils.mongo import db
 
 
 
