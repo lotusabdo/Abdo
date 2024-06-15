@@ -8,8 +8,8 @@ from pyrogram.types import (
     Message,
 )
 
-from AbdoX  import app
-from AbdoX .utils.database import (
+from AbdoX import app
+from AbdoX.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
