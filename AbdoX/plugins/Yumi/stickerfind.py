@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from AbdoX  import app
+from AbdoX import app
 
 
 @app.on_message(filters.command("st"))
