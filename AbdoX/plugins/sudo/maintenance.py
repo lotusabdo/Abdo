@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AbdoX  import app
-from AbdoX .misc import SUDOERS
-from AbdoX .utils.database import (
+from AbdoX import app
+from AbdoX.misc import SUDOERS
+from AbdoX.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
