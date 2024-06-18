@@ -26,27 +26,27 @@ async def iddlock(client: Client, message):
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
         if message.chat.id in iddof:
-            return await message.reply_text("⌯الامر معطل من قبل")
+            return await message.reply_text("◍الامر معطل من قبل")
         iddof.append(message.chat.id)
-        return await message.reply_text("⌯تم تعطيل الايدي بنجاح")
+        return await message.reply_text("◍تم تعطيل الايدي بنجاح")
     else:
-        return await message.reply_text("⌯عذرا عزيزي هذا الامر للادمن الجروب فقط")
+        return await message.reply_text("◍عذرا عزيزي هذا الامر للادمن الجروب فقط")
 
 @app.on_message(filters.command(["فتح الايدي", "تفعيل الايدي"], "") & filters.group)
 async def iddopen(client: Client, message):
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
         if message.chat.id not in iddof:
-            return await message.reply_text("⌯الايدي مفعل من قبل")
+            return await message.reply_text("◍الايدي مفعل من قبل")
         iddof.remove(message.chat.id)
-        return await message.reply_text("⌯تم تفعيل الايدي بنجاح")
+        return await message.reply_text("◍تم تفعيل الايدي بنجاح")
     else:
-        return await message.reply_text("⌯عذرا عزيزي هذا الامر للادمن الجروب فقط")
+        return await message.reply_text("◍عذرا عزيزي هذا الامر للادمن الجروب فقط")
 
 @app.on_message(filters.command(["ايدي","ا"], ""))
 async def muid(client: Client, message):
     if message.chat.id in iddof:
-        return await message.reply_text("⌯تم تعطيل امر الايدي من قبل المشرفين")
+        return await message.reply_text("◍تم تعطيل امر الايدي من قبل المشرفين")
     
     user = await client.get_chat(message.from_user.id)
     user_id = user.id
@@ -67,10 +67,29 @@ async def muid(client: Client, message):
     
     idd = len(id[user.id])
     
-    caption = f"⌯𝐍𝐚𝐦𝐞 : {first_name}\n⌯𝐢𝐝 : {user_id}\n⌯𝐔𝐬𝐞𝐫 : [@{username}]\n⌯𝐁𝐢𝐨 : {bio}"
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")],
-                
+    caption = f"𖥻 𝐍𝐚𝐦𝐞 : {first_name}\n𖥻 𝐢𝐝 : {user_id}\n𖥻 𝐔𝐬𝐞𝐫 : [@{username}]\n𖥻 𝐁𝐢𝐨 : {bio}"
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"{idd} ♥", callback_data=f"heart{user_id}")]])
+    
+    await message.reply_photo(photo=photo, caption=caption, reply_markup=reply_markup)
+
+@app.on_callback_query(filters.regex("heart"))
+async def heart(client, query: CallbackQuery):
+    callback_data = query.data.strip()
+    callback_request = callback_data.replace("heart", "")
+    user_id = int(callback_request)
+    user = await client.get_chat(user_id)
+    
+    if user.id not in id:
+        id[user.id] = []
+    
+    if query.from_user.mention not in id[user.id]:
+        id[user.id].append(query.from_user.mention)
+    else:
+        id[user.id].remove(query.from_user.mention)
+    
+    idd = len(id[user.id])
+    
+    caption = f"𖥻 𝐍𝐚𝐦𝐞 : {first_name}\n𖥻 𝐢𝐝 : {user_id}\n𖥻 𝐔𝐬𝐞𝐫 : [@{username}]\n𖥻 𝐁𝐢𝐨 : {bioo}"
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"{idd} ♥", callback_data=f"heart{user_id}")]])
+    
+    await query.edit_message_text(caption, reply_markup=reply_markup)
