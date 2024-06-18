@@ -52,7 +52,7 @@ from strings.filters import command
             
             "video",
             "تشغيل",
-            "ڤیدیو",
+            "فيد",
             "فيديو",
             "شغل",
         ]
