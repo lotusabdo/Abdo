@@ -17,13 +17,13 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["سورس","✯ السورس","السورس"])
+    command(["سورس","السورس"])
     
 )
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://t.me/HQ_BX/5",
-        caption=f"𖥻 WelCoMe To SoUrCe BoDa Music .",
+        caption=f"𖥻WelCoMe To SoUrCe BoDa Music.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -53,7 +53,7 @@ async def huhh(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.command(["مطور السورس","بودا","عبدو","مطور السورس ✯"], ""), group=73) 
+@app.on_message(filters.command(["مطور السورس","بودا","عبدو"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="II_U_6")
      name = user.first_name
