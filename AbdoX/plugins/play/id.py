@@ -74,26 +74,3 @@ async def muid(client: Client, message):
                     InlineKeyboardButton(
                         name, url=f"https://t.me/{message.from_user.username}")],
                 
-@app.on_callback_query(filters.regex("heart"))
-async def heart(client, query: CallbackQuery):
-    callback_data = query.data.strip()
-    callback_request = callback_data.replace("heart", "")
-    user_id = int(callback_request)
-    user = await client.get_chat(user_id)
-    
-    if user.id not in id:
-        id[user.id] = []
-    
-    if query.from_user.mention not in id[user.id]:
-        id[user.id].append(query.from_user.mention)
-    else:
-        id[user.id].remove(query.from_user.mention)
-    
-    idd = len(id[user.id])
-    
-    caption = f"⌯𝐍𝐚𝐦𝐞 : {first_name}\n⌯𝐢𝐝 : {user_id}\n⌯𝐔𝐬𝐞𝐫 : [@{username}]\n⌯𝐁𝐢𝐨 : {bioo}"
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")],
