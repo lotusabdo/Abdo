@@ -72,11 +72,8 @@ async def muid(client: Client, message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")
-                ],
-            ]
-        ),
-    )
+                        name, url=f"https://t.me/{message.from_user.username}")],
+                
 @app.on_callback_query(filters.regex("heart"))
 async def heart(client, query: CallbackQuery):
     callback_data = query.data.strip()
@@ -99,8 +96,4 @@ async def heart(client, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user.username}")
-                ],
-            ]
-        ),
-    )
+                        name, url=f"https://t.me/{message.from_user.username}")],
