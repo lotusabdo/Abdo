@@ -4,17 +4,17 @@ import asyncio
 from pyrogram import client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-from AbdoX .utils.database import get_assistant
+from AbdoX.utils.database import get_assistant
 import config
-from AbdoX  import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AbdoX .core.call import Alina
-from AbdoX .misc import SUDOERS
-from AbdoX .utils import seconds_to_min, time_to_seconds
-from AbdoX .utils.channelplay import get_channeplayCB
-from AbdoX .utils.decorators.language import languageCB
-from AbdoX .utils.decorators.play import PlayWrapper
-from AbdoX .utils.formatters import formats
-from AbdoX .utils.inline import (
+from AbdoX import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from AbdoX.core.call import Alina
+from AbdoX.misc import SUDOERS
+from AbdoX.utils import seconds_to_min, time_to_seconds
+from AbdoX.utils.channelplay import get_channeplayCB
+from AbdoX.utils.decorators.language import languageCB
+from AbdoX.utils.decorators.play import PlayWrapper
+from AbdoX.utils.formatters import formats
+from AbdoX.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
@@ -31,7 +31,7 @@ from AbdoX .utils.database import (
 )
 from config import BANNED_USERS, lyrical
 from time import time
-from AbdoX .utils.extraction import extract_user
+from AbdoX.utils.extraction import extract_user
 from strings.filters import command 
 
 @app.on_message(
