@@ -23,26 +23,26 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/2ac490ec640f742166ead.jpg",
-        caption=f"𖥻 WelCoMe To SoUrCe SaVlO Music .",
+        caption=f"- 𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐒𝐚𝐯𝐥𝐨𝐬 𝐌𝐮𝐬𝐢𝐜 .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𖥻 GrOuP .", url=f"https://t.me/C7_7M"), 
+                   "𖥻 𝐆 𝐑 𝐎 𝐔 𝐏 .", url=f"https://t.me/C7_7M"), 
                  InlineKeyboardButton(
-                   "𖥻 SoUrCe .",       url=f"https://t.me/l2_2Y"), 
+                   "𖥻 𝐒 𝐀 𝐕 𝐋 𝐎 .",  url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "𖥻 A b D o O .", url=f"https://t.me/II_U_6"), 
+                        "𖥻 𝐀 𝐁 𝐃 𝐎 𝐨 .", url=f"https://t.me/II_U_6"), 
                       
              ],[ 
             InlineKeyboardButton(
-                      "𖥻 G r A z Y .", url=f"https://t.me/CRAZ_UP"), 
+                      "𖥻 𝐆 𝐑 𝐀 𝐙 𝐘 .", url=f"https://t.me/CRAZ_UP"), 
                       
              ],[ 
                   InlineKeyboardButton(
-                text="𖥻 AdD Me To YoUr GrOuP .",
+                text="𖥻 𝐀𝐝𝐃 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐔𝐫 𝐆𝐫𝐎𝐮𝐏 .",
                 url=f"https://t.me/{app.username}?startgroup=true"),
                 ],
 
