@@ -52,7 +52,7 @@ async def ownner(client: Client, message: Message):
 
          async for photo in app.get_chat_photos(x[0],limit=1):
 
-          await message.reply_photo(photo.file_id,caption=f"𖥻 𝐊𝐈𝐍𝐆 :{m.first_name}\𖥻 𝐔𝐒𝐄𝐑 :@{m.username}\n𖥻 𝐈𝐃 :{m.id}\n𖥻 𝐂𝐇𝐀𝐓: {message.chat.title}\n𖥻 𝐈𝐃.𝐂𝐇𝐀𝐓 :{message.chat.id}",reply_markup=InlineKeyboardMarkup(
+          await message.reply_photo(photo.file_id,caption=f"𖥻 𝐊𝐈𝐍𝐆 :{m.first_name}\n𖥻 𝐔𝐒𝐄𝐑 :@{m.username}\n𖥻 𝐈𝐃 :{m.id}\n𖥻 𝐂𝐇𝐀𝐓: {message.chat.title}\n𖥻 𝐈𝐃.𝐂𝐇𝐀𝐓 :{message.chat.id}",reply_markup=InlineKeyboardMarkup(
 
              [              
 
