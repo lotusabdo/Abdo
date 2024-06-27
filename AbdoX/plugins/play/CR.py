@@ -21,8 +21,8 @@ from random import  choice, randint
     
 )
 async def huhh(client: Client, message: Message):
-    await message.reply_video(
-        video=f"https://t.me/HQ_BX/5",
+    await message.reply_photo(
+        photo=f"https://t.me/c/2107910251/9726",
         caption=f"𖥻 WelCoMe To SoUrCe SaVlO Music .",
         reply_markup=InlineKeyboardMarkup(
             [
