@@ -22,15 +22,15 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/b2959a98eb4574d6cf308.jpg",
-        caption=f"- 𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐒𝐚𝐯𝐥𝐨𝐬 𝐌𝐮𝐬𝐢𝐜 .",
+        photo=f"https://telegra.ph/file/15c8000f9e0813e925a18.jpg",
+        caption=f"- 𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐒𝐚𝐯𝐥𝐨 𝐌𝐮𝐬𝐢𝐜 .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                    "𖥻 𝐆 𝐑 𝐎 𝐔 𝐏 .", url=f"https://t.me/C7_7M"), 
                  InlineKeyboardButton(
-                   "𖥻 𝐒 𝐀 𝐕 𝐋 𝐎 .",  url=f"https://t.me/l2_2Y"), 
+                   "𖥻 𝐒 𝐀 𝐕 𝐈 𝐎 .",  url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
